@@ -122,16 +122,16 @@ builder.Services.AddAuthorization();
 // Registra o serviço de controllers (mapeia automaticamente os controllers da pasta /Controllers)
 builder.Services.AddControllers();
 
-var allowedOrigins = builder.Configuration
-    .GetSection("Cors:AllowedOrigins")
-    .Get<string[]>() ?? Array.Empty<string>();
+//var allowedOrigins = builder.Configuration
+//    .GetSection("Cors:AllowedOrigins")
+//    .Get<string[]>() ?? Array.Empty<string>();
 
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("Frontend", policy =>
     {
         policy
-            .WithOrigins(allowedOrigins)
+            .AllowAnyOrigin()
             .AllowAnyHeader()
             .AllowAnyMethod();
     });
