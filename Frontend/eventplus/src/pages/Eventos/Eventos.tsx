@@ -27,20 +27,22 @@ function Eventos() {
         <>
             <Header />
             <main>
-                <h1>Catálogo de eventos</h1>
-                <div>
-                    {eventos.map((evento) => (
-                        <CardEvento
-                        key={evento.idEvento}
-                        id={evento.idEvento}
-                        imagem={evento.imagemUrl}
-                        categoria={evento.idTipoEventoNavigation?.titulo}
-                        titulo={evento.nome}
-                        descricao={evento.descricao}/>
-                    ))}
+                <div className="container-eventos">
+                    <h1>Catálogo de eventos</h1>
+                    <div className="eventos">
+                        {eventos.map((evento) => (
+                            <CardEvento
+                                key={evento.idEvento}
+                                id={evento.idEvento}
+                                imagem={evento.imagemUrl}
+                                categoria={evento.idTipoEventoNavigation?.titulo}
+                                titulo={evento.nome}
+                                descricao={evento.descricao} />
+                        ))}
+                    </div>
                 </div>
             </main>
-            <Footer/>
+            <Footer />
         </>
     )
 }
