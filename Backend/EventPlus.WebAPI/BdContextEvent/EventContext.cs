@@ -168,7 +168,9 @@ public partial class EventContext : DbContext
             entity.Property(e => e.IdComentario).HasDefaultValueSql("(newid())");
             entity.Property(e => e.Descricao).HasMaxLength(200).IsRequired();
             entity.Property(e => e.DataComentario).HasColumnType("datetime").IsRequired();
-            entity.Property(e => e.Exibe).HasDefaultValue(true);
+            entity.Property(e => e.Exibe)
+            .IsRequired()
+            .ValueGeneratedNever();
 
             // Relacionamento Evento -> Comentario (Composição: FK Obrigatória, Exclusão em Cascata)
             entity.HasOne(d => d.IdEventoNavigation)

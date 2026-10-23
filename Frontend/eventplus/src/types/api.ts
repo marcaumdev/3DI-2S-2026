@@ -69,6 +69,13 @@ export interface AuthSession extends LoginResponse {
     usuario: Usuario;
 }
 
+export interface UsuarioPayload{
+    nome: string;
+    email: string;
+    senha: string;
+    idTipoUsuario: string | null;
+}
+
 export interface ComentarioPayload {
     descricao:string;
     idEvento: string;

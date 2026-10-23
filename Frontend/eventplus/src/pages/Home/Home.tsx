@@ -9,32 +9,38 @@ import CardEvento from "../../components/cardEvento/CardEvento"
 import Carrossel from "../../components/carrossel/Carrossel"
 
 import "./Home.css"
+import type { Evento } from "../../types/api"
+import { useCallback, useEffect, useState } from "react"
+import { eventoService } from "../../services/eventPlusservice"
+import { getApiErrorMessage } from "../../services/api"
 
 function Home() {
+    const [eventos, setEventos] = useState<Evento[]>([]);
+    const [carregando, setCarregando] = useState(true);
+    const [erro, setErro] = useState("")
 
-    const eventos = [
-        {
-            id: "1",
-            imagem: bannerEvento1,
-            titulo: "Evento de Tecnologia",
-            descricao: "Conheça novidades e tendência do setor.",
-            categoria: "Tecnologia"
-        },
-        {
-            id: "2",
-            imagem: bannerEvento2,
-            titulo: "Workshop de Desenvolvimento",
-            descricao: "Pratique desenvolvimento com atividades guiadas.",
-            categoria: "Workshop"
-        },
-        {
-            id: "3",
-            imagem: bannerEvento3,
-            titulo: "Meetup de IA",
-            descricao: "Discussões sobre aplicações de inteligência artificial.",
-            categoria: "Meetup"
+    const carregar = useCallback(async () => {
+        setCarregando(true);
+        setErro("");
+        try{
+            setEventos((await eventoService.listarProximos()).slice(0, 3));
+        }catch (error){
+            setErro(getApiErrorMessage(error))
+        }finally{
+            setCarregando(false);
         }
-    ]
+    }, []);
+
+    useEffect(() => {
+        const timeout = window.setTimeout(() => void carregar(), 0);
+        return () => window.clearTimeout(timeout);
+    }, [carregar]);
+
+    useEffect(() => {
+        if(window.location.hash === '#contato'){
+            requestAnimationFrame(() => document.querySelector('#contato')?.scrollIntoView());
+        }
+    }, [])
 
     return (
         <>
@@ -56,16 +62,18 @@ function Home() {
                         <h2>Próximos Eventos</h2>
                         <hr />
                     </div>
-
+                    {carregando ? <p>Carregando Próximos eventos...</p>: null}
+                    {erro ? <p>{erro}</p> : null}
+                    {!carregando && !erro && eventos.length === 0 ? <p>Nenhum próximo evento cadastrado</p> : null}
                     <div className="home-eventos-lista">
                         {eventos.map((evento) => (
                             <CardEvento
-                            key={evento.id}
-                            id={evento.id}
-                            titulo={evento.titulo}
-                            imagem={evento.imagem}
+                            key={evento.idEvento}
+                            id={evento.idEvento}
+                            titulo={evento.nome}
+                            imagem={evento.imagemUrl}
                             descricao={evento.descricao}
-                            categoria={evento.categoria}
+                            categoria={evento.idTipoEventoNavigation?.titulo}
                             />
                         ))}
                     </div>

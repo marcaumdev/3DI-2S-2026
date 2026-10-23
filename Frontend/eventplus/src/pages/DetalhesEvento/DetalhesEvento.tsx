@@ -1,11 +1,12 @@
 import { Link, useNavigate, useParams } from "react-router-dom";
-import { useCallback, useEffect, useState } from "react";
-import type { Presenca, Evento, Comentario } from "../../types/api";
+import { useCallback, useEffect, useState, type FormEvent } from "react";
+import type { Presenca, Evento, Comentario, MensagemModeracao } from "../../types/api";
 
 import imagemPadrao from "../../assets/banner-1.png"
 import relogio from "../../assets/icons/relogio.svg"
 import predio from "../../assets/icons/predio.svg"
 import filtro from "../../assets/icons/filtro.svg"
+import enviar from "../../assets/icons/enviar.svg"
 
 import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
@@ -16,6 +17,21 @@ import { comentarioService, eventoService, presencaService } from "../../service
 import { useAuth } from "../../context/auth";
 import { getApiErrorMessage } from "../../services/api";
 import ModalConfirmacao from "../../components/modalConfirmacao/ModalConfirmacao";
+import Campo from "../../components/campo/Campo";
+
+function formatarData(value: string){
+    const data = new Date(value);
+    return Number.isNaN(data.getDate())
+    ? "Data não informada"
+    : new Intl.DateTimeFormat("pt-BR", { day: "2-digit", month: "long", year: "numeric"}).format(data);
+}
+
+function formatarHora(value: string){
+    const data = new Date(value);
+    return Number.isNaN(data.getTime())
+    ? "Horário não informado"
+    : new Intl.DateTimeFormat("pt-BR", {hour: "2-digit", minute: "2-digit"}).format(data);
+}
 
 function DetalhesEvento() {
     const { id = "" } = useParams();
@@ -32,6 +48,9 @@ function DetalhesEvento() {
     const [enviandoInscricao, setEnviandoInscricao] = useState(false);
     const [mensagemInscricao, setMensagemInscricao] = useState("");
     const [carregando, setCarregando] = useState(false)
+    const [novoComentario, setNovoComentario] = useState("");
+    const [mensagemComentario, setMensagemComentario] = useState("")
+    const [enviandoComentario, setEnviandoComentario] = useState(false);
     const [erro, setErro] = useState("")
 
     const carregar = useCallback(async () => {
@@ -118,6 +137,32 @@ function DetalhesEvento() {
         }
     }
 
+    async function comentar(event: FormEvent<HTMLFormElement>){
+        event.preventDefault();
+        if(exigirLogin() || !usuario || !novoComentario.trim()) return;
+        setEnviandoComentario(true);
+        setMensagemComentario("")
+
+        try{
+            const response = await comentarioService.cadastrar({
+                descricao: novoComentario.trim(),
+                idEvento: evento?.idEvento || "",
+                idUsuario: usuario.idUsuario
+            });
+            setNovoComentario("")
+            if("mensagem" in response){
+                setMensagemComentario((response as MensagemModeracao).mensagem);
+            } else{
+                setComentarios((items) => [...items, response]);
+                setMensagemComentario("Comentário publicado.");
+            }
+        }catch (error){
+            setMensagemComentario(getApiErrorMessage(error));
+        } finally {
+            setEnviandoComentario(false);
+        }
+    }
+
     const chavePresenca = usuario && id ? `${usuario.idUsuario}:${id}` : ""
     const checandoPresenca = Boolean(chavePresenca && presencaCarregada !== chavePresenca)
 
@@ -131,7 +176,41 @@ function DetalhesEvento() {
                     <button onClick={() => setSecaoComentarios(false)}>Sobre o Evento</button>
                     <button onClick={() => setSecaoComentarios(true)}>Comentários</button>
                     {secaoComentarios ?
-                        <h2>Comentários</h2>
+                        <div className="detalhe-evento-comentarios" role="tabpanel">
+                            <form onSubmit={comentar}>
+                                <label className="visually-hidden" htmlFor="novo-comentario">Comentar</label>
+                                <Campo 
+                                id="novo-comentario" 
+                                value={novoComentario} 
+                                maxLength={200}
+                                onChange={(event) => setNovoComentario(event.target.value)}
+                                />
+                                <button 
+                                type="submit"
+                                aria-label="Enviar comentário"
+                                disabled={enviandoComentario}
+                                >
+                                    <img src={enviar} alt="icone de enviar" />
+                                </button>
+                            </form>
+
+                            {
+                            mensagemComentario 
+                            ? <p className="detalhe-evento-mensagem" role="status">{mensagemComentario}</p> 
+                            : null
+                            }
+
+                            {comentarios.length === 0 
+                            ? <p>Nenhum comentário publicado</p>
+                            : comentarios.map((comentario) => (
+                                <article key={comentario.idComentario} className="detalhe-evento-comentario">
+                                    <div>
+                                        <strong>{comentario.idUsuarioNavigation?.nome || "Usuário"}</strong> <time>{new Date(comentario.dataComentario).toLocaleString("pt-BR", {day: "2-digit", month:"2-digit", hour:"2-digit", minute:"2-digit"})}</time>
+                                        <p>{comentario.descricao}</p>
+                                    </div>
+                                </article>
+                            ))}
+                        </div>
                         :
                         <>
                             <p>{evento?.descricao}</p>
@@ -143,7 +222,7 @@ function DetalhesEvento() {
 
                     <div>
                         <img src={relogio} alt="" />
-                        <span>{evento?.dataEvento}</span>
+                        <span>{formatarData(evento?.dataEvento || "")} às {formatarHora(evento?.dataEvento || "")}</span>
                     </div>
                     <div>
                         <img src={predio} alt="" />
