@@ -1,6 +1,3 @@
-import bannerEvento1 from "../../assets/banner-1.png"
-import bannerEvento2 from "../../assets/banner-2.png"
-import bannerEvento3 from "../../assets/banner-3.png"
 import visaoImg from "../../assets/visao-img.png"
 
 import Header from "../../components/header/Header"

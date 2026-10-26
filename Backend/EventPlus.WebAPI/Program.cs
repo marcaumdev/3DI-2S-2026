@@ -2,6 +2,7 @@ using EventPlus.WebAPI.BdContextEvent;
 using EventPlus.WebAPI.Interfaces;
 using EventPlus.WebAPI.Repositories;
 using EventPlus.WebAPI.Services;
+using EventPlus.WebAPI.Utils;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.OpenApi;
@@ -41,13 +42,17 @@ builder.Services.AddScoped<IComentarioRepository, ComentarioRepository>();
 builder.Services.AddScoped<IPresencaRepository, PresencaRepository>();
 
 // ----------------------------------------------------------
-// 3. SERVIÇOS DE IMAGEM E MODERAÇÃO (preparados para Nuvem)
+// 3. SERVIÇOS DE IMAGEM E MODERAÇÃO
 // ----------------------------------------------------------
-// Armazenamento de Imagens:
-// Registramos o CloudStorageServiceStub como implementação inicial.
-// Quando escolher o provedor de nuvem (Azure Blob, AWS S3, etc.),
-// substitua CloudStorageServiceStub pela implementação real (ex: AzureBlobService).
-builder.Services.AddScoped<IImageStorageService, CloudStorageServiceStub>();
+builder.Services.AddOptions<CloudinarySettings>()
+    .Bind(builder.Configuration.GetSection(CloudinarySettings.SectionName))
+    .Validate(settings =>
+        !string.IsNullOrWhiteSpace(settings.CloudName) &&
+        !string.IsNullOrWhiteSpace(settings.ApiKey) &&
+        !string.IsNullOrWhiteSpace(settings.ApiSecret),
+        "Configure Cloudinary:CloudName, Cloudinary:ApiKey e Cloudinary:ApiSecret.")
+    .ValidateOnStart();
+builder.Services.AddScoped<IImageStorageService, CloudinaryImageStorageService>();
 
 // Moderação de Conteúdo:
 // Registramos o MockContentModerationService como implementação inicial.

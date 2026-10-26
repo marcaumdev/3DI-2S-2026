@@ -41,9 +41,9 @@ public partial class Evento
     public DateTime DataEvento { get; set; }
 
     /// <summary>
-    /// URL da imagem do evento armazenada no serviço de nuvem (ex: Azure Blob Storage).
+    /// URL da imagem do evento armazenada no Cloudinary.
     /// </summary>
-    [StringLength(200)]
+    [StringLength(2048)]
     public string? ImagemUrl { get; set; }
 
     /// <summary>

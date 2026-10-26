@@ -35,6 +35,16 @@ export interface Evento {
     idInstituicaoNavigation?: instituicao | null
 }
 
+export interface EventoPayload {
+    nome: string;
+    descricao: string;
+    dataEvento: string;
+    arquivoImagem?: File | null;
+    imagemUrl?: string | null;
+    idTipoEvento?: string | null;
+    idInstituicao?: string | null;
+}
+
 export interface Comentario {
     idComentario: string;
     descricao: string;

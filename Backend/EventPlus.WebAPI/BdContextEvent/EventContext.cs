@@ -126,7 +126,7 @@ public partial class EventContext : DbContext
             entity.Property(e => e.Nome).HasMaxLength(100).IsRequired();
             entity.Property(e => e.Descricao).HasColumnType("text").IsRequired();
             entity.Property(e => e.DataEvento).HasColumnType("datetime").IsRequired();
-            entity.Property(e => e.ImagemUrl).HasMaxLength(200);
+            entity.Property(e => e.ImagemUrl).HasMaxLength(2048);
 
             // Relacionamento TipoEvento -> Evento (Associação: FK Anulável)
             entity.HasOne(d => d.IdTipoEventoNavigation)

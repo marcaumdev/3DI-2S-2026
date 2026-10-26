@@ -31,6 +31,7 @@ public class EventoDTO
     /// <summary>
     /// URL direta da imagem (caso já esteja hospedada na nuvem).
     /// </summary>
+    [StringLength(2048, ErrorMessage = "A URL da imagem pode ter no máximo 2048 caracteres.")]
     public string? ImagemUrl { get; set; }
 
     /// <summary>

@@ -63,7 +63,7 @@ CREATE TABLE Evento (
     NomeEvento    VARCHAR(100)     NOT NULL,
     DataEvento    DATETIME2        NOT NULL,
     Descricao     VARCHAR(MAX)     NOT NULL,
-    ImagemUrl     VARCHAR(200)     NULL,
+    ImagemUrl     NVARCHAR(2048)  NULL,
     IdTipoEvento  UNIQUEIDENTIFIER NULL,
     IdInstituicao UNIQUEIDENTIFIER NULL,
     CONSTRAINT PK_Evento PRIMARY KEY (IdEvento),
