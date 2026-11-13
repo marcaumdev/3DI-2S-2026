@@ -29,14 +29,16 @@ public class CloudinaryService(
             return false;
 
         var match = Regex.Match(url.AbsolutePath,
-            $@"^/(?i:{Regex.Escape(_settings.CloudName)})/image/upload/v[0-9]/(plot/(?:filmes|usuarios)/[0-9a-fA-F{{32}})\.[^/]+$");
+            $@"^/(?i:{Regex.Escape(_settings.CloudName)})/image/upload/v[0-9]+/(plot/(?:filmes|usuarios)/[0-9a-fA-F]{{32}})\.[^/]+$");
         if (!match.Success) return false;
 
         var publicId = match.Groups[1].Value;
 
         try
         {
-            return (await Cliente.DestroyAsync(new DeletionParams(publicId))).Result == "ok";
+            return (await Cliente.DestroyAsync(
+                new DeletionParams(publicId) { Invalidate = true }
+                )).Result == "ok";
         }
         catch (Exception erro) 
         {

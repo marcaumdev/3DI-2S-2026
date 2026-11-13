@@ -3,96 +3,116 @@
   "WorkspaceRootPath": "C:\\Users\\Marcos Vinicius\\Desktop\\3DI-2S-2026\\Projeto de Revis\u00E3o\\Plot.WebAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B021E9E9-61AC-48ED-B4FB-655E71F2A980}|Plot.WebAPI.csproj|c:\\users\\marcos vinicius\\desktop\\3di-2s-2026\\projeto de revis\u00E3o\\plot.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B021E9E9-61AC-48ED-B4FB-655E71F2A980}|Plot.WebAPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{08F987AA-D0A0-09E3-63EA-DAE7A69DD57C}|Plot.WebAPI.csproj|c:\\users\\marcos vinicius\\desktop\\3di-2s-2026\\projeto de revis\u00E3o\\plot.webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{08F987AA-D0A0-09E3-63EA-DAE7A69DD57C}|Plot.WebAPI.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B021E9E9-61AC-48ED-B4FB-655E71F2A980}|Plot.WebAPI.csproj|c:\\users\\marcos vinicius\\desktop\\3di-2s-2026\\projeto de revis\u00E3o\\plot.webapi\\services\\cloudinaryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B021E9E9-61AC-48ED-B4FB-655E71F2A980}|Plot.WebAPI.csproj|solutionrelative:services\\cloudinaryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{08F987AA-D0A0-09E3-63EA-DAE7A69DD57C}|Plot.WebAPI.csproj|c:\\users\\marcos vinicius\\desktop\\3di-2s-2026\\projeto de revis\u00E3o\\plot.webapi\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08F987AA-D0A0-09E3-63EA-DAE7A69DD57C}|Plot.WebAPI.csproj|solutionrelative:controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B021E9E9-61AC-48ED-B4FB-655E71F2A980}|Plot.WebAPI.csproj|c:\\users\\marcos vinicius\\desktop\\3di-2s-2026\\projeto de revis\u00E3o\\plot.webapi\\services\\imagefolder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B021E9E9-61AC-48ED-B4FB-655E71F2A980}|Plot.WebAPI.csproj|solutionrelative:services\\imagefolder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{08F987AA-D0A0-09E3-63EA-DAE7A69DD57C}|Plot.WebAPI.csproj|c:\\users\\marcos vinicius\\desktop\\3di-2s-2026\\projeto de revis\u00E3o\\plot.webapi\\controllers\\filmecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08F987AA-D0A0-09E3-63EA-DAE7A69DD57C}|Plot.WebAPI.csproj|solutionrelative:controllers\\filmecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B021E9E9-61AC-48ED-B4FB-655E71F2A980}|Plot.WebAPI.csproj|c:\\users\\marcos vinicius\\desktop\\3di-2s-2026\\projeto de revis\u00E3o\\plot.webapi\\utils\\cloudinarysettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B021E9E9-61AC-48ED-B4FB-655E71F2A980}|Plot.WebAPI.csproj|solutionrelative:utils\\cloudinarysettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{08F987AA-D0A0-09E3-63EA-DAE7A69DD57C}|Plot.WebAPI.csproj|c:\\users\\marcos vinicius\\desktop\\3di-2s-2026\\projeto de revis\u00E3o\\plot.webapi\\controllers\\generocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08F987AA-D0A0-09E3-63EA-DAE7A69DD57C}|Plot.WebAPI.csproj|solutionrelative:controllers\\generocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B021E9E9-61AC-48ED-B4FB-655E71F2A980}|Plot.WebAPI.csproj|c:\\users\\marcos vinicius\\desktop\\3di-2s-2026\\projeto de revis\u00E3o\\plot.webapi\\services\\iimageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B021E9E9-61AC-48ED-B4FB-655E71F2A980}|Plot.WebAPI.csproj|solutionrelative:services\\iimageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{08F987AA-D0A0-09E3-63EA-DAE7A69DD57C}|Plot.WebAPI.csproj|c:\\users\\marcos vinicius\\desktop\\3di-2s-2026\\projeto de revis\u00E3o\\plot.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08F987AA-D0A0-09E3-63EA-DAE7A69DD57C}|Plot.WebAPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B021E9E9-61AC-48ED-B4FB-655E71F2A980}|Plot.WebAPI.csproj|c:\\users\\marcos vinicius\\desktop\\3di-2s-2026\\projeto de revis\u00E3o\\plot.webapi\\utils\\jwtsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B021E9E9-61AC-48ED-B4FB-655E71F2A980}|Plot.WebAPI.csproj|solutionrelative:utils\\jwtsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{08F987AA-D0A0-09E3-63EA-DAE7A69DD57C}|Plot.WebAPI.csproj|c:\\users\\marcos vinicius\\desktop\\3di-2s-2026\\projeto de revis\u00E3o\\plot.webapi\\dto\\usuariorespostadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08F987AA-D0A0-09E3-63EA-DAE7A69DD57C}|Plot.WebAPI.csproj|solutionrelative:dto\\usuariorespostadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B021E9E9-61AC-48ED-B4FB-655E71F2A980}|Plot.WebAPI.csproj|c:\\users\\marcos vinicius\\desktop\\3di-2s-2026\\projeto de revis\u00E3o\\plot.webapi\\dto\\usuariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B021E9E9-61AC-48ED-B4FB-655E71F2A980}|Plot.WebAPI.csproj|solutionrelative:dto\\usuariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{08F987AA-D0A0-09E3-63EA-DAE7A69DD57C}|Plot.WebAPI.csproj|c:\\users\\marcos vinicius\\desktop\\3di-2s-2026\\projeto de revis\u00E3o\\plot.webapi\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08F987AA-D0A0-09E3-63EA-DAE7A69DD57C}|Plot.WebAPI.csproj|solutionrelative:controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B021E9E9-61AC-48ED-B4FB-655E71F2A980}|Plot.WebAPI.csproj|c:\\users\\marcos vinicius\\desktop\\3di-2s-2026\\projeto de revis\u00E3o\\plot.webapi\\dto\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B021E9E9-61AC-48ED-B4FB-655E71F2A980}|Plot.WebAPI.csproj|solutionrelative:dto\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{08F987AA-D0A0-09E3-63EA-DAE7A69DD57C}|Plot.WebAPI.csproj|c:\\users\\marcos vinicius\\desktop\\3di-2s-2026\\projeto de revis\u00E3o\\plot.webapi\\repositories\\filmerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08F987AA-D0A0-09E3-63EA-DAE7A69DD57C}|Plot.WebAPI.csproj|solutionrelative:repositories\\filmerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B021E9E9-61AC-48ED-B4FB-655E71F2A980}|Plot.WebAPI.csproj|c:\\users\\marcos vinicius\\desktop\\3di-2s-2026\\projeto de revis\u00E3o\\plot.webapi\\dto\\usuariorepostadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B021E9E9-61AC-48ED-B4FB-655E71F2A980}|Plot.WebAPI.csproj|solutionrelative:dto\\usuariorepostadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{08F987AA-D0A0-09E3-63EA-DAE7A69DD57C}|Plot.WebAPI.csproj|c:\\users\\marcos vinicius\\desktop\\3di-2s-2026\\projeto de revis\u00E3o\\plot.webapi\\services\\cloudinaryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08F987AA-D0A0-09E3-63EA-DAE7A69DD57C}|Plot.WebAPI.csproj|solutionrelative:services\\cloudinaryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B021E9E9-61AC-48ED-B4FB-655E71F2A980}|Plot.WebAPI.csproj|c:\\users\\marcos vinicius\\desktop\\3di-2s-2026\\projeto de revis\u00E3o\\plot.webapi\\dto\\usuarioatualizacaodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B021E9E9-61AC-48ED-B4FB-655E71F2A980}|Plot.WebAPI.csproj|solutionrelative:dto\\usuarioatualizacaodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{08F987AA-D0A0-09E3-63EA-DAE7A69DD57C}|Plot.WebAPI.csproj|c:\\users\\marcos vinicius\\desktop\\3di-2s-2026\\projeto de revis\u00E3o\\plot.webapi\\dto\\filmedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08F987AA-D0A0-09E3-63EA-DAE7A69DD57C}|Plot.WebAPI.csproj|solutionrelative:dto\\filmedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B021E9E9-61AC-48ED-B4FB-655E71F2A980}|Plot.WebAPI.csproj|c:\\users\\marcos vinicius\\desktop\\3di-2s-2026\\projeto de revis\u00E3o\\plot.webapi\\dto\\filmedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B021E9E9-61AC-48ED-B4FB-655E71F2A980}|Plot.WebAPI.csproj|solutionrelative:dto\\filmedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{08F987AA-D0A0-09E3-63EA-DAE7A69DD57C}|Plot.WebAPI.csproj|c:\\users\\marcos vinicius\\desktop\\3di-2s-2026\\projeto de revis\u00E3o\\plot.webapi\\models\\filme.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08F987AA-D0A0-09E3-63EA-DAE7A69DD57C}|Plot.WebAPI.csproj|solutionrelative:models\\filme.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B021E9E9-61AC-48ED-B4FB-655E71F2A980}|Plot.WebAPI.csproj|c:\\users\\marcos vinicius\\desktop\\3di-2s-2026\\projeto de revis\u00E3o\\plot.webapi\\models\\filme.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B021E9E9-61AC-48ED-B4FB-655E71F2A980}|Plot.WebAPI.csproj|solutionrelative:models\\filme.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{08F987AA-D0A0-09E3-63EA-DAE7A69DD57C}|Plot.WebAPI.csproj|c:\\users\\marcos vinicius\\desktop\\3di-2s-2026\\projeto de revis\u00E3o\\plot.webapi\\utils\\criptografia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08F987AA-D0A0-09E3-63EA-DAE7A69DD57C}|Plot.WebAPI.csproj|solutionrelative:utils\\criptografia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B021E9E9-61AC-48ED-B4FB-655E71F2A980}|Plot.WebAPI.csproj|c:\\users\\marcos vinicius\\desktop\\3di-2s-2026\\projeto de revis\u00E3o\\plot.webapi\\dto\\generodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B021E9E9-61AC-48ED-B4FB-655E71F2A980}|Plot.WebAPI.csproj|solutionrelative:dto\\generodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{08F987AA-D0A0-09E3-63EA-DAE7A69DD57C}|Plot.WebAPI.csproj|c:\\users\\marcos vinicius\\desktop\\3di-2s-2026\\projeto de revis\u00E3o\\plot.webapi\\utils\\cloudinarysettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08F987AA-D0A0-09E3-63EA-DAE7A69DD57C}|Plot.WebAPI.csproj|solutionrelative:utils\\cloudinarysettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B021E9E9-61AC-48ED-B4FB-655E71F2A980}|Plot.WebAPI.csproj|c:\\users\\marcos vinicius\\desktop\\3di-2s-2026\\projeto de revis\u00E3o\\plot.webapi\\repositories\\usuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B021E9E9-61AC-48ED-B4FB-655E71F2A980}|Plot.WebAPI.csproj|solutionrelative:repositories\\usuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{08F987AA-D0A0-09E3-63EA-DAE7A69DD57C}|Plot.WebAPI.csproj|c:\\users\\marcos vinicius\\desktop\\3di-2s-2026\\projeto de revis\u00E3o\\plot.webapi\\services\\imagefolder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08F987AA-D0A0-09E3-63EA-DAE7A69DD57C}|Plot.WebAPI.csproj|solutionrelative:services\\imagefolder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B021E9E9-61AC-48ED-B4FB-655E71F2A980}|Plot.WebAPI.csproj|c:\\users\\marcos vinicius\\desktop\\3di-2s-2026\\projeto de revis\u00E3o\\plot.webapi\\repositories\\filmerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B021E9E9-61AC-48ED-B4FB-655E71F2A980}|Plot.WebAPI.csproj|solutionrelative:repositories\\filmerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{08F987AA-D0A0-09E3-63EA-DAE7A69DD57C}|Plot.WebAPI.csproj|c:\\users\\marcos vinicius\\desktop\\3di-2s-2026\\projeto de revis\u00E3o\\plot.webapi\\services\\iimageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08F987AA-D0A0-09E3-63EA-DAE7A69DD57C}|Plot.WebAPI.csproj|solutionrelative:services\\iimageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B021E9E9-61AC-48ED-B4FB-655E71F2A980}|Plot.WebAPI.csproj|c:\\users\\marcos vinicius\\desktop\\3di-2s-2026\\projeto de revis\u00E3o\\plot.webapi\\interfaces\\igenerorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B021E9E9-61AC-48ED-B4FB-655E71F2A980}|Plot.WebAPI.csproj|solutionrelative:interfaces\\igenerorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{08F987AA-D0A0-09E3-63EA-DAE7A69DD57C}|Plot.WebAPI.csproj|c:\\users\\marcos vinicius\\desktop\\3di-2s-2026\\projeto de revis\u00E3o\\plot.webapi\\models\\genero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08F987AA-D0A0-09E3-63EA-DAE7A69DD57C}|Plot.WebAPI.csproj|solutionrelative:models\\genero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B021E9E9-61AC-48ED-B4FB-655E71F2A980}|Plot.WebAPI.csproj|c:\\users\\marcos vinicius\\desktop\\3di-2s-2026\\projeto de revis\u00E3o\\plot.webapi\\repositories\\generorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B021E9E9-61AC-48ED-B4FB-655E71F2A980}|Plot.WebAPI.csproj|solutionrelative:repositories\\generorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{08F987AA-D0A0-09E3-63EA-DAE7A69DD57C}|Plot.WebAPI.csproj|c:\\users\\marcos vinicius\\desktop\\3di-2s-2026\\projeto de revis\u00E3o\\plot.webapi\\repositories\\generorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08F987AA-D0A0-09E3-63EA-DAE7A69DD57C}|Plot.WebAPI.csproj|solutionrelative:repositories\\generorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B021E9E9-61AC-48ED-B4FB-655E71F2A980}|Plot.WebAPI.csproj|c:\\users\\marcos vinicius\\desktop\\3di-2s-2026\\projeto de revis\u00E3o\\plot.webapi\\utils\\criptografia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B021E9E9-61AC-48ED-B4FB-655E71F2A980}|Plot.WebAPI.csproj|solutionrelative:utils\\criptografia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{08F987AA-D0A0-09E3-63EA-DAE7A69DD57C}|Plot.WebAPI.csproj|c:\\users\\marcos vinicius\\desktop\\3di-2s-2026\\projeto de revis\u00E3o\\plot.webapi\\interfaces\\igenerorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08F987AA-D0A0-09E3-63EA-DAE7A69DD57C}|Plot.WebAPI.csproj|solutionrelative:interfaces\\igenerorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B021E9E9-61AC-48ED-B4FB-655E71F2A980}|Plot.WebAPI.csproj|c:\\users\\marcos vinicius\\desktop\\3di-2s-2026\\projeto de revis\u00E3o\\plot.webapi\\interfaces\\iusuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B021E9E9-61AC-48ED-B4FB-655E71F2A980}|Plot.WebAPI.csproj|solutionrelative:interfaces\\iusuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{08F987AA-D0A0-09E3-63EA-DAE7A69DD57C}|Plot.WebAPI.csproj|c:\\users\\marcos vinicius\\desktop\\3di-2s-2026\\projeto de revis\u00E3o\\plot.webapi\\utils\\swaggerauthorizeoperationfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08F987AA-D0A0-09E3-63EA-DAE7A69DD57C}|Plot.WebAPI.csproj|solutionrelative:utils\\swaggerauthorizeoperationfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B021E9E9-61AC-48ED-B4FB-655E71F2A980}|Plot.WebAPI.csproj|c:\\users\\marcos vinicius\\desktop\\3di-2s-2026\\projeto de revis\u00E3o\\plot.webapi\\interfaces\\ifilmerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B021E9E9-61AC-48ED-B4FB-655E71F2A980}|Plot.WebAPI.csproj|solutionrelative:interfaces\\ifilmerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{08F987AA-D0A0-09E3-63EA-DAE7A69DD57C}|Plot.WebAPI.csproj|c:\\users\\marcos vinicius\\desktop\\3di-2s-2026\\projeto de revis\u00E3o\\plot.webapi\\utils\\jwtsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08F987AA-D0A0-09E3-63EA-DAE7A69DD57C}|Plot.WebAPI.csproj|solutionrelative:utils\\jwtsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B021E9E9-61AC-48ED-B4FB-655E71F2A980}|Plot.WebAPI.csproj|c:\\users\\marcos vinicius\\desktop\\3di-2s-2026\\projeto de revis\u00E3o\\plot.webapi\\models\\genero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B021E9E9-61AC-48ED-B4FB-655E71F2A980}|Plot.WebAPI.csproj|solutionrelative:models\\genero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{08F987AA-D0A0-09E3-63EA-DAE7A69DD57C}|Plot.WebAPI.csproj|c:\\users\\marcos vinicius\\desktop\\3di-2s-2026\\projeto de revis\u00E3o\\plot.webapi\\dto\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08F987AA-D0A0-09E3-63EA-DAE7A69DD57C}|Plot.WebAPI.csproj|solutionrelative:dto\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B021E9E9-61AC-48ED-B4FB-655E71F2A980}|Plot.WebAPI.csproj|c:\\users\\marcos vinicius\\desktop\\3di-2s-2026\\projeto de revis\u00E3o\\plot.webapi\\context\\plotdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B021E9E9-61AC-48ED-B4FB-655E71F2A980}|Plot.WebAPI.csproj|solutionrelative:context\\plotdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{08F987AA-D0A0-09E3-63EA-DAE7A69DD57C}|Plot.WebAPI.csproj|c:\\users\\marcos vinicius\\desktop\\3di-2s-2026\\projeto de revis\u00E3o\\plot.webapi\\dto\\usuarioatualizacaodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08F987AA-D0A0-09E3-63EA-DAE7A69DD57C}|Plot.WebAPI.csproj|solutionrelative:dto\\usuarioatualizacaodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B021E9E9-61AC-48ED-B4FB-655E71F2A980}|Plot.WebAPI.csproj|c:\\users\\marcos vinicius\\desktop\\3di-2s-2026\\projeto de revis\u00E3o\\plot.webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{B021E9E9-61AC-48ED-B4FB-655E71F2A980}|Plot.WebAPI.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{08F987AA-D0A0-09E3-63EA-DAE7A69DD57C}|Plot.WebAPI.csproj|c:\\users\\marcos vinicius\\desktop\\3di-2s-2026\\projeto de revis\u00E3o\\plot.webapi\\dto\\usuariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08F987AA-D0A0-09E3-63EA-DAE7A69DD57C}|Plot.WebAPI.csproj|solutionrelative:dto\\usuariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08F987AA-D0A0-09E3-63EA-DAE7A69DD57C}|Plot.WebAPI.csproj|c:\\users\\marcos vinicius\\desktop\\3di-2s-2026\\projeto de revis\u00E3o\\plot.webapi\\dto\\generodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08F987AA-D0A0-09E3-63EA-DAE7A69DD57C}|Plot.WebAPI.csproj|solutionrelative:dto\\generodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08F987AA-D0A0-09E3-63EA-DAE7A69DD57C}|Plot.WebAPI.csproj|c:\\users\\marcos vinicius\\desktop\\3di-2s-2026\\projeto de revis\u00E3o\\plot.webapi\\repositories\\usuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08F987AA-D0A0-09E3-63EA-DAE7A69DD57C}|Plot.WebAPI.csproj|solutionrelative:repositories\\usuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08F987AA-D0A0-09E3-63EA-DAE7A69DD57C}|Plot.WebAPI.csproj|c:\\users\\marcos vinicius\\desktop\\3di-2s-2026\\projeto de revis\u00E3o\\plot.webapi\\interfaces\\iusuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08F987AA-D0A0-09E3-63EA-DAE7A69DD57C}|Plot.WebAPI.csproj|solutionrelative:interfaces\\iusuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08F987AA-D0A0-09E3-63EA-DAE7A69DD57C}|Plot.WebAPI.csproj|c:\\users\\marcos vinicius\\desktop\\3di-2s-2026\\projeto de revis\u00E3o\\plot.webapi\\interfaces\\ifilmerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08F987AA-D0A0-09E3-63EA-DAE7A69DD57C}|Plot.WebAPI.csproj|solutionrelative:interfaces\\ifilmerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08F987AA-D0A0-09E3-63EA-DAE7A69DD57C}|Plot.WebAPI.csproj|c:\\users\\marcos vinicius\\desktop\\3di-2s-2026\\projeto de revis\u00E3o\\plot.webapi\\context\\plotdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08F987AA-D0A0-09E3-63EA-DAE7A69DD57C}|Plot.WebAPI.csproj|solutionrelative:context\\plotdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -102,50 +122,133 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "JwtSettings.cs",
-              "DocumentMoniker": "C:\\Users\\Marcos Vinicius\\Desktop\\3DI-2S-2026\\Projeto de Revis\u00E3o\\Plot.WebAPI\\Utils\\JwtSettings.cs",
-              "RelativeDocumentMoniker": "Utils\\JwtSettings.cs",
-              "ToolTip": "C:\\Users\\Marcos Vinicius\\Desktop\\3DI-2S-2026\\Projeto de Revis\u00E3o\\Plot.WebAPI\\Utils\\JwtSettings.cs",
-              "RelativeToolTip": "Utils\\JwtSettings.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-09T18:10:21.536Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "CloudinarySettings.cs",
-              "DocumentMoniker": "C:\\Users\\Marcos Vinicius\\Desktop\\3DI-2S-2026\\Projeto de Revis\u00E3o\\Plot.WebAPI\\Utils\\CloudinarySettings.cs",
-              "RelativeDocumentMoniker": "Utils\\CloudinarySettings.cs",
-              "ToolTip": "C:\\Users\\Marcos Vinicius\\Desktop\\3DI-2S-2026\\Projeto de Revis\u00E3o\\Plot.WebAPI\\Utils\\CloudinarySettings.cs",
-              "RelativeToolTip": "Utils\\CloudinarySettings.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-09T18:02:53.284Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "IImageService.cs",
-              "DocumentMoniker": "C:\\Users\\Marcos Vinicius\\Desktop\\3DI-2S-2026\\Projeto de Revis\u00E3o\\Plot.WebAPI\\Services\\IImageService.cs",
-              "RelativeDocumentMoniker": "Services\\IImageService.cs",
-              "ToolTip": "C:\\Users\\Marcos Vinicius\\Desktop\\3DI-2S-2026\\Projeto de Revis\u00E3o\\Plot.WebAPI\\Services\\IImageService.cs",
-              "RelativeToolTip": "Services\\IImageService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAxAAAAAAAAAA==",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Marcos Vinicius\\Desktop\\3DI-2S-2026\\Projeto de Revis\u00E3o\\Plot.WebAPI\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Marcos Vinicius\\Desktop\\3DI-2S-2026\\Projeto de Revis\u00E3o\\Plot.WebAPI\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAAAEoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-09T17:59:04.159Z",
+              "WhenOpened": "2026-11-09T12:20:35.137Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Criptografia.cs",
+              "DocumentMoniker": "C:\\Users\\Marcos Vinicius\\Desktop\\3DI-2S-2026\\Projeto de Revis\u00E3o\\Plot.WebAPI\\Utils\\Criptografia.cs",
+              "RelativeDocumentMoniker": "Utils\\Criptografia.cs",
+              "ToolTip": "C:\\Users\\Marcos Vinicius\\Desktop\\3DI-2S-2026\\Projeto de Revis\u00E3o\\Plot.WebAPI\\Utils\\Criptografia.cs",
+              "RelativeToolTip": "Utils\\Criptografia.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAQwBAAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-09T13:29:04.213Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UsuarioRespostaDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Marcos Vinicius\\Desktop\\3DI-2S-2026\\Projeto de Revis\u00E3o\\Plot.WebAPI\\DTO\\UsuarioRespostaDTO.cs",
+              "RelativeDocumentMoniker": "DTO\\UsuarioRespostaDTO.cs",
+              "ToolTip": "C:\\Users\\Marcos Vinicius\\Desktop\\3DI-2S-2026\\Projeto de Revis\u00E3o\\Plot.WebAPI\\DTO\\UsuarioRespostaDTO.cs",
+              "RelativeToolTip": "DTO\\UsuarioRespostaDTO.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAQAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-09T17:42:34.819Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Marcos Vinicius\\Desktop\\3DI-2S-2026\\Projeto de Revis\u00E3o\\Plot.WebAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\Marcos Vinicius\\Desktop\\3DI-2S-2026\\Projeto de Revis\u00E3o\\Plot.WebAPI\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAABnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-11-09T11:40:07.017Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "FilmeController.cs",
+              "DocumentMoniker": "C:\\Users\\Marcos Vinicius\\Desktop\\3DI-2S-2026\\Projeto de Revis\u00E3o\\Plot.WebAPI\\Controllers\\FilmeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\FilmeController.cs",
+              "ToolTip": "C:\\Users\\Marcos Vinicius\\Desktop\\3DI-2S-2026\\Projeto de Revis\u00E3o\\Plot.WebAPI\\Controllers\\FilmeController.cs",
+              "RelativeToolTip": "Controllers\\FilmeController.cs",
+              "ViewState": "AgIAAHIAAAAAAAAAAADwv3sAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-13T13:05:07.785Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UsuarioController.cs",
+              "DocumentMoniker": "C:\\Users\\Marcos Vinicius\\Desktop\\3DI-2S-2026\\Projeto de Revis\u00E3o\\Plot.WebAPI\\Controllers\\UsuarioController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UsuarioController.cs",
+              "ToolTip": "C:\\Users\\Marcos Vinicius\\Desktop\\3DI-2S-2026\\Projeto de Revis\u00E3o\\Plot.WebAPI\\Controllers\\UsuarioController.cs",
+              "RelativeToolTip": "Controllers\\UsuarioController.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAgwIMAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-13T17:16:35.29Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "GeneroController.cs",
+              "DocumentMoniker": "C:\\Users\\Marcos Vinicius\\Desktop\\3DI-2S-2026\\Projeto de Revis\u00E3o\\Plot.WebAPI\\Controllers\\GeneroController.cs",
+              "RelativeDocumentMoniker": "Controllers\\GeneroController.cs",
+              "ToolTip": "C:\\Users\\Marcos Vinicius\\Desktop\\3DI-2S-2026\\Projeto de Revis\u00E3o\\Plot.WebAPI\\Controllers\\GeneroController.cs",
+              "RelativeToolTip": "Controllers\\GeneroController.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAA8wEcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-13T11:52:22.966Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CloudinaryService.cs",
+              "DocumentMoniker": "C:\\Users\\Marcos Vinicius\\Desktop\\3DI-2S-2026\\Projeto de Revis\u00E3o\\Plot.WebAPI\\Services\\CloudinaryService.cs",
+              "RelativeDocumentMoniker": "Services\\CloudinaryService.cs",
+              "ToolTip": "C:\\Users\\Marcos Vinicius\\Desktop\\3DI-2S-2026\\Projeto de Revis\u00E3o\\Plot.WebAPI\\Services\\CloudinaryService.cs",
+              "RelativeToolTip": "Services\\CloudinaryService.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAACMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-09T17:55:18.568Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "C:\\Users\\Marcos Vinicius\\Desktop\\3DI-2S-2026\\Projeto de Revis\u00E3o\\Plot.WebAPI\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "Controllers\\LoginController.cs",
+              "ToolTip": "C:\\Users\\Marcos Vinicius\\Desktop\\3DI-2S-2026\\Projeto de Revis\u00E3o\\Plot.WebAPI\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "Controllers\\LoginController.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAADIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-13T18:07:14.165Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "FilmeRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Marcos Vinicius\\Desktop\\3DI-2S-2026\\Projeto de Revis\u00E3o\\Plot.WebAPI\\Repositories\\FilmeRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\FilmeRepository.cs",
+              "ToolTip": "C:\\Users\\Marcos Vinicius\\Desktop\\3DI-2S-2026\\Projeto de Revis\u00E3o\\Plot.WebAPI\\Repositories\\FilmeRepository.cs",
+              "RelativeToolTip": "Repositories\\FilmeRepository.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAowC4AAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-09T14:17:34.475Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "ImageFolder.cs",
               "DocumentMoniker": "C:\\Users\\Marcos Vinicius\\Desktop\\3DI-2S-2026\\Projeto de Revis\u00E3o\\Plot.WebAPI\\Services\\ImageFolder.cs",
               "RelativeDocumentMoniker": "Services\\ImageFolder.cs",
@@ -153,203 +256,79 @@
               "RelativeToolTip": "Services\\ImageFolder.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-09T17:57:11.74Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CloudinaryService.cs",
-              "DocumentMoniker": "C:\\Users\\Marcos Vinicius\\Desktop\\3DI-2S-2026\\Projeto de Revis\u00E3o\\Plot.WebAPI\\Services\\CloudinaryService.cs",
-              "RelativeDocumentMoniker": "Services\\CloudinaryService.cs",
-              "ToolTip": "C:\\Users\\Marcos Vinicius\\Desktop\\3DI-2S-2026\\Projeto de Revis\u00E3o\\Plot.WebAPI\\Services\\CloudinaryService.cs",
-              "RelativeToolTip": "Services\\CloudinaryService.cs",
-              "ViewState": "AgIAAEQAAAAAAAAAAAAewBwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-09T17:55:18.568Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "LoginDTO.cs",
-              "DocumentMoniker": "C:\\Users\\Marcos Vinicius\\Desktop\\3DI-2S-2026\\Projeto de Revis\u00E3o\\Plot.WebAPI\\DTO\\LoginDTO.cs",
-              "RelativeDocumentMoniker": "DTO\\LoginDTO.cs",
-              "ToolTip": "C:\\Users\\Marcos Vinicius\\Desktop\\3DI-2S-2026\\Projeto de Revis\u00E3o\\Plot.WebAPI\\DTO\\LoginDTO.cs",
-              "RelativeToolTip": "DTO\\LoginDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-09T17:48:18.343Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Marcos Vinicius\\Desktop\\3DI-2S-2026\\Projeto de Revis\u00E3o\\Plot.WebAPI\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\Marcos Vinicius\\Desktop\\3DI-2S-2026\\Projeto de Revis\u00E3o\\Plot.WebAPI\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-09T12:20:35.137Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "UsuarioRepostaDTO.cs",
-              "DocumentMoniker": "C:\\Users\\Marcos Vinicius\\Desktop\\3DI-2S-2026\\Projeto de Revis\u00E3o\\Plot.WebAPI\\DTO\\UsuarioRepostaDTO.cs",
-              "RelativeDocumentMoniker": "DTO\\UsuarioRepostaDTO.cs",
-              "ToolTip": "C:\\Users\\Marcos Vinicius\\Desktop\\3DI-2S-2026\\Projeto de Revis\u00E3o\\Plot.WebAPI\\DTO\\UsuarioRepostaDTO.cs",
-              "RelativeToolTip": "DTO\\UsuarioRepostaDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAA5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-09T17:42:34.819Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-09T17:57:11.74Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "UsuarioAtualizacaoDTO.cs",
-              "DocumentMoniker": "C:\\Users\\Marcos Vinicius\\Desktop\\3DI-2S-2026\\Projeto de Revis\u00E3o\\Plot.WebAPI\\DTO\\UsuarioAtualizacaoDTO.cs",
-              "RelativeDocumentMoniker": "DTO\\UsuarioAtualizacaoDTO.cs",
-              "ToolTip": "C:\\Users\\Marcos Vinicius\\Desktop\\3DI-2S-2026\\Projeto de Revis\u00E3o\\Plot.WebAPI\\DTO\\UsuarioAtualizacaoDTO.cs",
-              "RelativeToolTip": "DTO\\UsuarioAtualizacaoDTO.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAQwBYAAABFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-09T17:29:21Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "UsuarioDTO.cs",
-              "DocumentMoniker": "C:\\Users\\Marcos Vinicius\\Desktop\\3DI-2S-2026\\Projeto de Revis\u00E3o\\Plot.WebAPI\\DTO\\UsuarioDTO.cs",
-              "RelativeDocumentMoniker": "DTO\\UsuarioDTO.cs",
-              "ToolTip": "C:\\Users\\Marcos Vinicius\\Desktop\\3DI-2S-2026\\Projeto de Revis\u00E3o\\Plot.WebAPI\\DTO\\UsuarioDTO.cs",
-              "RelativeToolTip": "DTO\\UsuarioDTO.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAA3wBkAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-09T17:17:16.884Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
               "Title": "FilmeDTO.cs",
               "DocumentMoniker": "C:\\Users\\Marcos Vinicius\\Desktop\\3DI-2S-2026\\Projeto de Revis\u00E3o\\Plot.WebAPI\\DTO\\FilmeDTO.cs",
               "RelativeDocumentMoniker": "DTO\\FilmeDTO.cs",
               "ToolTip": "C:\\Users\\Marcos Vinicius\\Desktop\\3DI-2S-2026\\Projeto de Revis\u00E3o\\Plot.WebAPI\\DTO\\FilmeDTO.cs",
               "RelativeToolTip": "DTO\\FilmeDTO.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAzwBkAAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-09T16:48:38.378Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-09T16:48:38.378Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "GeneroDTO.cs",
-              "DocumentMoniker": "C:\\Users\\Marcos Vinicius\\Desktop\\3DI-2S-2026\\Projeto de Revis\u00E3o\\Plot.WebAPI\\DTO\\GeneroDTO.cs",
-              "RelativeDocumentMoniker": "DTO\\GeneroDTO.cs",
-              "ToolTip": "C:\\Users\\Marcos Vinicius\\Desktop\\3DI-2S-2026\\Projeto de Revis\u00E3o\\Plot.WebAPI\\DTO\\GeneroDTO.cs",
-              "RelativeToolTip": "DTO\\GeneroDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-09T16:38:57.255Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "UsuarioRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Marcos Vinicius\\Desktop\\3DI-2S-2026\\Projeto de Revis\u00E3o\\Plot.WebAPI\\Repositories\\UsuarioRepository.cs",
-              "RelativeDocumentMoniker": "Repositories\\UsuarioRepository.cs",
-              "ToolTip": "C:\\Users\\Marcos Vinicius\\Desktop\\3DI-2S-2026\\Projeto de Revis\u00E3o\\Plot.WebAPI\\Repositories\\UsuarioRepository.cs",
-              "RelativeToolTip": "Repositories\\UsuarioRepository.cs",
-              "ViewState": "AgIAADsAAAAAAAAAAAAswEsAAABDAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-09T14:45:26.694Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "FilmeRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Marcos Vinicius\\Desktop\\3DI-2S-2026\\Projeto de Revis\u00E3o\\Plot.WebAPI\\Repositories\\FilmeRepository.cs",
-              "RelativeDocumentMoniker": "Repositories\\FilmeRepository.cs",
-              "ToolTip": "C:\\Users\\Marcos Vinicius\\Desktop\\3DI-2S-2026\\Projeto de Revis\u00E3o\\Plot.WebAPI\\Repositories\\FilmeRepository.cs",
-              "RelativeToolTip": "Repositories\\FilmeRepository.cs",
-              "ViewState": "AgIAADcAAAAAAAAAAAAwwEYAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-09T14:17:34.475Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "IUsuarioRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Marcos Vinicius\\Desktop\\3DI-2S-2026\\Projeto de Revis\u00E3o\\Plot.WebAPI\\Interfaces\\IUsuarioRepository.cs",
-              "RelativeDocumentMoniker": "Interfaces\\IUsuarioRepository.cs",
-              "ToolTip": "C:\\Users\\Marcos Vinicius\\Desktop\\3DI-2S-2026\\Projeto de Revis\u00E3o\\Plot.WebAPI\\Interfaces\\IUsuarioRepository.cs",
-              "RelativeToolTip": "Interfaces\\IUsuarioRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-09T13:22:22.932Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 10,
               "Title": "Filme.cs",
               "DocumentMoniker": "C:\\Users\\Marcos Vinicius\\Desktop\\3DI-2S-2026\\Projeto de Revis\u00E3o\\Plot.WebAPI\\Models\\Filme.cs",
               "RelativeDocumentMoniker": "Models\\Filme.cs",
               "ToolTip": "C:\\Users\\Marcos Vinicius\\Desktop\\3DI-2S-2026\\Projeto de Revis\u00E3o\\Plot.WebAPI\\Models\\Filme.cs",
               "RelativeToolTip": "Models\\Filme.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAQwBUAAAATAAAAAAAAAA==",
+              "ViewState": "AgIAABcAAAAAAAAAAAAgwBUAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-09T12:26:49.246Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-09T12:26:49.246Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Criptografia.cs",
-              "DocumentMoniker": "C:\\Users\\Marcos Vinicius\\Desktop\\3DI-2S-2026\\Projeto de Revis\u00E3o\\Plot.WebAPI\\Utils\\Criptografia.cs",
-              "RelativeDocumentMoniker": "Utils\\Criptografia.cs",
-              "ToolTip": "C:\\Users\\Marcos Vinicius\\Desktop\\3DI-2S-2026\\Projeto de Revis\u00E3o\\Plot.WebAPI\\Utils\\Criptografia.cs",
-              "RelativeToolTip": "Utils\\Criptografia.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAA1wBAAAAALAAAAAAAAAA==",
+              "DocumentIndex": 14,
+              "Title": "IImageService.cs",
+              "DocumentMoniker": "C:\\Users\\Marcos Vinicius\\Desktop\\3DI-2S-2026\\Projeto de Revis\u00E3o\\Plot.WebAPI\\Services\\IImageService.cs",
+              "RelativeDocumentMoniker": "Services\\IImageService.cs",
+              "ToolTip": "C:\\Users\\Marcos Vinicius\\Desktop\\3DI-2S-2026\\Projeto de Revis\u00E3o\\Plot.WebAPI\\Services\\IImageService.cs",
+              "RelativeToolTip": "Services\\IImageService.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAA8wAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-09T13:29:04.213Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-09T17:59:04.159Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "IFilmeRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Marcos Vinicius\\Desktop\\3DI-2S-2026\\Projeto de Revis\u00E3o\\Plot.WebAPI\\Interfaces\\IFilmeRepository.cs",
-              "RelativeDocumentMoniker": "Interfaces\\IFilmeRepository.cs",
-              "ToolTip": "C:\\Users\\Marcos Vinicius\\Desktop\\3DI-2S-2026\\Projeto de Revis\u00E3o\\Plot.WebAPI\\Interfaces\\IFilmeRepository.cs",
-              "RelativeToolTip": "Interfaces\\IFilmeRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABuAAAAAAAAAA==",
+              "DocumentIndex": 12,
+              "Title": "CloudinarySettings.cs",
+              "DocumentMoniker": "C:\\Users\\Marcos Vinicius\\Desktop\\3DI-2S-2026\\Projeto de Revis\u00E3o\\Plot.WebAPI\\Utils\\CloudinarySettings.cs",
+              "RelativeDocumentMoniker": "Utils\\CloudinarySettings.cs",
+              "ToolTip": "C:\\Users\\Marcos Vinicius\\Desktop\\3DI-2S-2026\\Projeto de Revis\u00E3o\\Plot.WebAPI\\Utils\\CloudinarySettings.cs",
+              "RelativeToolTip": "Utils\\CloudinarySettings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-09T13:17:07.412Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-09T18:02:53.284Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 15,
-              "Title": "IGeneroRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Marcos Vinicius\\Desktop\\3DI-2S-2026\\Projeto de Revis\u00E3o\\Plot.WebAPI\\Interfaces\\IGeneroRepository.cs",
-              "RelativeDocumentMoniker": "Interfaces\\IGeneroRepository.cs",
-              "ToolTip": "C:\\Users\\Marcos Vinicius\\Desktop\\3DI-2S-2026\\Projeto de Revis\u00E3o\\Plot.WebAPI\\Interfaces\\IGeneroRepository.cs",
-              "RelativeToolTip": "Interfaces\\IGeneroRepository.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAYAAAASAAAAAAAAAA==",
+              "Title": "Genero.cs",
+              "DocumentMoniker": "C:\\Users\\Marcos Vinicius\\Desktop\\3DI-2S-2026\\Projeto de Revis\u00E3o\\Plot.WebAPI\\Models\\Genero.cs",
+              "RelativeDocumentMoniker": "Models\\Genero.cs",
+              "ToolTip": "C:\\Users\\Marcos Vinicius\\Desktop\\3DI-2S-2026\\Projeto de Revis\u00E3o\\Plot.WebAPI\\Models\\Genero.cs",
+              "RelativeToolTip": "Models\\Genero.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAuwBMAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-09T13:07:29.316Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-09T12:56:26.477Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "SwaggerAuthorizeOperationFilter.cs",
+              "DocumentMoniker": "C:\\Users\\Marcos Vinicius\\Desktop\\3DI-2S-2026\\Projeto de Revis\u00E3o\\Plot.WebAPI\\Utils\\SwaggerAuthorizeOperationFilter.cs",
+              "RelativeDocumentMoniker": "Utils\\SwaggerAuthorizeOperationFilter.cs",
+              "ToolTip": "C:\\Users\\Marcos Vinicius\\Desktop\\3DI-2S-2026\\Projeto de Revis\u00E3o\\Plot.WebAPI\\Utils\\SwaggerAuthorizeOperationFilter.cs",
+              "RelativeToolTip": "Utils\\SwaggerAuthorizeOperationFilter.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAswBMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-13T11:26:21.603Z"
             },
             {
               "$type": "Document",
@@ -359,27 +338,121 @@
               "RelativeDocumentMoniker": "Repositories\\GeneroRepository.cs",
               "ToolTip": "C:\\Users\\Marcos Vinicius\\Desktop\\3DI-2S-2026\\Projeto de Revis\u00E3o\\Plot.WebAPI\\Repositories\\GeneroRepository.cs",
               "RelativeToolTip": "Repositories\\GeneroRepository.cs",
-              "ViewState": "AgIAACgAAAAAAAAAAAAswDYAAABXAAAAAAAAAA==",
+              "ViewState": "AgIAABoAAAAAAAAAAAAWwCAAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-09T13:42:35.29Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-09T13:42:35.29Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "IGeneroRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Marcos Vinicius\\Desktop\\3DI-2S-2026\\Projeto de Revis\u00E3o\\Plot.WebAPI\\Interfaces\\IGeneroRepository.cs",
+              "RelativeDocumentMoniker": "Interfaces\\IGeneroRepository.cs",
+              "ToolTip": "C:\\Users\\Marcos Vinicius\\Desktop\\3DI-2S-2026\\Projeto de Revis\u00E3o\\Plot.WebAPI\\Interfaces\\IGeneroRepository.cs",
+              "RelativeToolTip": "Interfaces\\IGeneroRepository.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAvwAsAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-09T13:07:29.316Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 20,
-              "Title": "Genero.cs",
-              "DocumentMoniker": "C:\\Users\\Marcos Vinicius\\Desktop\\3DI-2S-2026\\Projeto de Revis\u00E3o\\Plot.WebAPI\\Models\\Genero.cs",
-              "RelativeDocumentMoniker": "Models\\Genero.cs",
-              "ToolTip": "C:\\Users\\Marcos Vinicius\\Desktop\\3DI-2S-2026\\Projeto de Revis\u00E3o\\Plot.WebAPI\\Models\\Genero.cs",
-              "RelativeToolTip": "Models\\Genero.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "LoginDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Marcos Vinicius\\Desktop\\3DI-2S-2026\\Projeto de Revis\u00E3o\\Plot.WebAPI\\DTO\\LoginDTO.cs",
+              "RelativeDocumentMoniker": "DTO\\LoginDTO.cs",
+              "ToolTip": "C:\\Users\\Marcos Vinicius\\Desktop\\3DI-2S-2026\\Projeto de Revis\u00E3o\\Plot.WebAPI\\DTO\\LoginDTO.cs",
+              "RelativeToolTip": "DTO\\LoginDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-09T12:56:26.477Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-09T17:48:18.343Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "JwtSettings.cs",
+              "DocumentMoniker": "C:\\Users\\Marcos Vinicius\\Desktop\\3DI-2S-2026\\Projeto de Revis\u00E3o\\Plot.WebAPI\\Utils\\JwtSettings.cs",
+              "RelativeDocumentMoniker": "Utils\\JwtSettings.cs",
+              "ToolTip": "C:\\Users\\Marcos Vinicius\\Desktop\\3DI-2S-2026\\Projeto de Revis\u00E3o\\Plot.WebAPI\\Utils\\JwtSettings.cs",
+              "RelativeToolTip": "Utils\\JwtSettings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-09T18:10:21.536Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 21,
+              "Title": "UsuarioAtualizacaoDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Marcos Vinicius\\Desktop\\3DI-2S-2026\\Projeto de Revis\u00E3o\\Plot.WebAPI\\DTO\\UsuarioAtualizacaoDTO.cs",
+              "RelativeDocumentMoniker": "DTO\\UsuarioAtualizacaoDTO.cs",
+              "ToolTip": "C:\\Users\\Marcos Vinicius\\Desktop\\3DI-2S-2026\\Projeto de Revis\u00E3o\\Plot.WebAPI\\DTO\\UsuarioAtualizacaoDTO.cs",
+              "RelativeToolTip": "DTO\\UsuarioAtualizacaoDTO.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAQwBYAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-09T17:29:21Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "UsuarioDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Marcos Vinicius\\Desktop\\3DI-2S-2026\\Projeto de Revis\u00E3o\\Plot.WebAPI\\DTO\\UsuarioDTO.cs",
+              "RelativeDocumentMoniker": "DTO\\UsuarioDTO.cs",
+              "ToolTip": "C:\\Users\\Marcos Vinicius\\Desktop\\3DI-2S-2026\\Projeto de Revis\u00E3o\\Plot.WebAPI\\DTO\\UsuarioDTO.cs",
+              "RelativeToolTip": "DTO\\UsuarioDTO.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAA3wBkAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-09T17:17:16.884Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "GeneroDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Marcos Vinicius\\Desktop\\3DI-2S-2026\\Projeto de Revis\u00E3o\\Plot.WebAPI\\DTO\\GeneroDTO.cs",
+              "RelativeDocumentMoniker": "DTO\\GeneroDTO.cs",
+              "ToolTip": "C:\\Users\\Marcos Vinicius\\Desktop\\3DI-2S-2026\\Projeto de Revis\u00E3o\\Plot.WebAPI\\DTO\\GeneroDTO.cs",
+              "RelativeToolTip": "DTO\\GeneroDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-09T16:38:57.255Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "UsuarioRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Marcos Vinicius\\Desktop\\3DI-2S-2026\\Projeto de Revis\u00E3o\\Plot.WebAPI\\Repositories\\UsuarioRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\UsuarioRepository.cs",
+              "ToolTip": "C:\\Users\\Marcos Vinicius\\Desktop\\3DI-2S-2026\\Projeto de Revis\u00E3o\\Plot.WebAPI\\Repositories\\UsuarioRepository.cs",
+              "RelativeToolTip": "Repositories\\UsuarioRepository.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAAAswEsAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-09T14:45:26.694Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "IUsuarioRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Marcos Vinicius\\Desktop\\3DI-2S-2026\\Projeto de Revis\u00E3o\\Plot.WebAPI\\Interfaces\\IUsuarioRepository.cs",
+              "RelativeDocumentMoniker": "Interfaces\\IUsuarioRepository.cs",
+              "ToolTip": "C:\\Users\\Marcos Vinicius\\Desktop\\3DI-2S-2026\\Projeto de Revis\u00E3o\\Plot.WebAPI\\Interfaces\\IUsuarioRepository.cs",
+              "RelativeToolTip": "Interfaces\\IUsuarioRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-09T13:22:22.932Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "IFilmeRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Marcos Vinicius\\Desktop\\3DI-2S-2026\\Projeto de Revis\u00E3o\\Plot.WebAPI\\Interfaces\\IFilmeRepository.cs",
+              "RelativeDocumentMoniker": "Interfaces\\IFilmeRepository.cs",
+              "ToolTip": "C:\\Users\\Marcos Vinicius\\Desktop\\3DI-2S-2026\\Projeto de Revis\u00E3o\\Plot.WebAPI\\Interfaces\\IFilmeRepository.cs",
+              "RelativeToolTip": "Interfaces\\IFilmeRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-09T13:17:07.412Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
               "Title": "PlotDbContext.cs",
               "DocumentMoniker": "C:\\Users\\Marcos Vinicius\\Desktop\\3DI-2S-2026\\Projeto de Revis\u00E3o\\Plot.WebAPI\\Context\\PlotDbContext.cs",
               "RelativeDocumentMoniker": "Context\\PlotDbContext.cs",
@@ -387,21 +460,7 @@
               "RelativeToolTip": "Context\\PlotDbContext.cs",
               "ViewState": "AgIAABwAAAAAAAAAAAA/wC0AAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-09T12:09:13.593Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Marcos Vinicius\\Desktop\\3DI-2S-2026\\Projeto de Revis\u00E3o\\Plot.WebAPI\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Users\\Marcos Vinicius\\Desktop\\3DI-2S-2026\\Projeto de Revis\u00E3o\\Plot.WebAPI\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-11-09T11:40:07.017Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-09T12:09:13.593Z"
             }
           ]
         }

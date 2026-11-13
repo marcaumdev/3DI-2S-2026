@@ -16,7 +16,7 @@ namespace Plot.WebAPI.DTO
         public int Duracao { get; set; }
         public string? ImagemCapa { get; set; }
         public IFormFile? ArquivoImagem { get; set; }
-        public List<int> IdGeneros { get; set; } = new();
+        public List<int>? IdGeneros { get; set; } = new();
 
         public IEnumerable<ValidationResult> Validate(ValidationContext validationContext)
         {
