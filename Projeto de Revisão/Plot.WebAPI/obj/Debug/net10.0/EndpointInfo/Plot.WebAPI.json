@@ -1,0 +1,28 @@
+{
+  "openapi": "3.0.4",
+  "info": {
+    "title": "Plot.WebAPI",
+    "description": "API de filmes, gênero e usuários.",
+    "version": "v1"
+  },
+  "paths": {
+    "/swagger": {
+      "get": {
+        "tags": [
+          "Plot.WebAPI"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "components": { },
+  "tags": [
+    {
+      "name": "Plot.WebAPI"
+    }
+  ]
+}
