@@ -104,4 +104,7 @@ ORDER BY f.Titulo;
 
 SELECT * FROM Usuario
 
+ALTER TABLE Usuario
+ADD FotoPerfil	VARCHAR(MAX); -Force
+
 DELETE FROM Usuario

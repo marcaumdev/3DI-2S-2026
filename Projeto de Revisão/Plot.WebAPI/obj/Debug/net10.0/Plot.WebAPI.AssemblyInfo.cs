@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Plot.WebAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ee41a35bbbedf3065d293a309c309d36a1c3e3ff")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4ec3a66460265b6d19b8e486c43990e5cc79b711")]
 [assembly: System.Reflection.AssemblyProductAttribute("Plot.WebAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Plot.WebAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

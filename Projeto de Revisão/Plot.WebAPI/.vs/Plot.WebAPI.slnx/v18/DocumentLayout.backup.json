@@ -3,20 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Marcos Vinicius\\Desktop\\3DI-2S-2026\\Projeto de Revis\u00E3o\\Plot.WebAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{08F987AA-D0A0-09E3-63EA-DAE7A69DD57C}|Plot.WebAPI.csproj|c:\\users\\marcos vinicius\\desktop\\3di-2s-2026\\projeto de revis\u00E3o\\plot.webapi\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{08F987AA-D0A0-09E3-63EA-DAE7A69DD57C}|Plot.WebAPI.csproj|solutionrelative:controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{08F987AA-D0A0-09E3-63EA-DAE7A69DD57C}|Plot.WebAPI.csproj|c:\\users\\marcos vinicius\\desktop\\3di-2s-2026\\projeto de revis\u00E3o\\plot.webapi\\controllers\\filmecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{08F987AA-D0A0-09E3-63EA-DAE7A69DD57C}|Plot.WebAPI.csproj|solutionrelative:controllers\\filmecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{08F987AA-D0A0-09E3-63EA-DAE7A69DD57C}|Plot.WebAPI.csproj|c:\\users\\marcos vinicius\\desktop\\3di-2s-2026\\projeto de revis\u00E3o\\plot.webapi\\controllers\\generocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{08F987AA-D0A0-09E3-63EA-DAE7A69DD57C}|Plot.WebAPI.csproj|solutionrelative:controllers\\generocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{08F987AA-D0A0-09E3-63EA-DAE7A69DD57C}|Plot.WebAPI.csproj|c:\\users\\marcos vinicius\\desktop\\3di-2s-2026\\projeto de revis\u00E3o\\plot.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{08F987AA-D0A0-09E3-63EA-DAE7A69DD57C}|Plot.WebAPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08F987AA-D0A0-09E3-63EA-DAE7A69DD57C}|Plot.WebAPI.csproj|c:\\users\\marcos vinicius\\desktop\\3di-2s-2026\\projeto de revis\u00E3o\\plot.webapi\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08F987AA-D0A0-09E3-63EA-DAE7A69DD57C}|Plot.WebAPI.csproj|solutionrelative:controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{08F987AA-D0A0-09E3-63EA-DAE7A69DD57C}|Plot.WebAPI.csproj|c:\\users\\marcos vinicius\\desktop\\3di-2s-2026\\projeto de revis\u00E3o\\plot.webapi\\dto\\usuariorespostadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -25,6 +17,14 @@
     {
       "AbsoluteMoniker": "D:0:0:{08F987AA-D0A0-09E3-63EA-DAE7A69DD57C}|Plot.WebAPI.csproj|c:\\users\\marcos vinicius\\desktop\\3di-2s-2026\\projeto de revis\u00E3o\\plot.webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{08F987AA-D0A0-09E3-63EA-DAE7A69DD57C}|Plot.WebAPI.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08F987AA-D0A0-09E3-63EA-DAE7A69DD57C}|Plot.WebAPI.csproj|c:\\users\\marcos vinicius\\desktop\\3di-2s-2026\\projeto de revis\u00E3o\\plot.webapi\\controllers\\filmecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08F987AA-D0A0-09E3-63EA-DAE7A69DD57C}|Plot.WebAPI.csproj|solutionrelative:controllers\\filmecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08F987AA-D0A0-09E3-63EA-DAE7A69DD57C}|Plot.WebAPI.csproj|c:\\users\\marcos vinicius\\desktop\\3di-2s-2026\\projeto de revis\u00E3o\\plot.webapi\\controllers\\generocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08F987AA-D0A0-09E3-63EA-DAE7A69DD57C}|Plot.WebAPI.csproj|solutionrelative:controllers\\generocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{08F987AA-D0A0-09E3-63EA-DAE7A69DD57C}|Plot.WebAPI.csproj|c:\\users\\marcos vinicius\\desktop\\3di-2s-2026\\projeto de revis\u00E3o\\plot.webapi\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -122,19 +122,70 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Marcos Vinicius\\Desktop\\3DI-2S-2026\\Projeto de Revis\u00E3o\\Plot.WebAPI\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\Marcos Vinicius\\Desktop\\3DI-2S-2026\\Projeto de Revis\u00E3o\\Plot.WebAPI\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAEYAAAAAAAAAAAAAAEoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAFsAAAAAAAAAAAAAAF0AAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-11-09T12:20:35.137Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UsuarioRespostaDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Marcos Vinicius\\Desktop\\3DI-2S-2026\\Projeto de Revis\u00E3o\\Plot.WebAPI\\DTO\\UsuarioRespostaDTO.cs",
+              "RelativeDocumentMoniker": "DTO\\UsuarioRespostaDTO.cs",
+              "ToolTip": "C:\\Users\\Marcos Vinicius\\Desktop\\3DI-2S-2026\\Projeto de Revis\u00E3o\\Plot.WebAPI\\DTO\\UsuarioRespostaDTO.cs",
+              "RelativeToolTip": "DTO\\UsuarioRespostaDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAABrAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-09T17:42:34.819Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Marcos Vinicius\\Desktop\\3DI-2S-2026\\Projeto de Revis\u00E3o\\Plot.WebAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\Marcos Vinicius\\Desktop\\3DI-2S-2026\\Projeto de Revis\u00E3o\\Plot.WebAPI\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-11-09T11:40:07.017Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FilmeController.cs",
+              "DocumentMoniker": "C:\\Users\\Marcos Vinicius\\Desktop\\3DI-2S-2026\\Projeto de Revis\u00E3o\\Plot.WebAPI\\Controllers\\FilmeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\FilmeController.cs",
+              "ToolTip": "C:\\Users\\Marcos Vinicius\\Desktop\\3DI-2S-2026\\Projeto de Revis\u00E3o\\Plot.WebAPI\\Controllers\\FilmeController.cs",
+              "RelativeToolTip": "Controllers\\FilmeController.cs",
+              "ViewState": "AgIAAHIAAAAAAAAAAADwv3sAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-13T13:05:07.785Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UsuarioController.cs",
+              "DocumentMoniker": "C:\\Users\\Marcos Vinicius\\Desktop\\3DI-2S-2026\\Projeto de Revis\u00E3o\\Plot.WebAPI\\Controllers\\UsuarioController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UsuarioController.cs",
+              "ToolTip": "C:\\Users\\Marcos Vinicius\\Desktop\\3DI-2S-2026\\Projeto de Revis\u00E3o\\Plot.WebAPI\\Controllers\\UsuarioController.cs",
+              "RelativeToolTip": "Controllers\\UsuarioController.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAAwC4AAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-13T17:16:35.29Z",
               "EditorCaption": ""
             },
             {
@@ -147,64 +198,11 @@
               "RelativeToolTip": "Utils\\Criptografia.cs",
               "ViewState": "AgIAAAoAAAAAAAAAAAAQwBAAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-09T13:29:04.213Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "UsuarioRespostaDTO.cs",
-              "DocumentMoniker": "C:\\Users\\Marcos Vinicius\\Desktop\\3DI-2S-2026\\Projeto de Revis\u00E3o\\Plot.WebAPI\\DTO\\UsuarioRespostaDTO.cs",
-              "RelativeDocumentMoniker": "DTO\\UsuarioRespostaDTO.cs",
-              "ToolTip": "C:\\Users\\Marcos Vinicius\\Desktop\\3DI-2S-2026\\Projeto de Revis\u00E3o\\Plot.WebAPI\\DTO\\UsuarioRespostaDTO.cs",
-              "RelativeToolTip": "DTO\\UsuarioRespostaDTO.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAQAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-09T17:42:34.819Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-09T13:29:04.213Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Marcos Vinicius\\Desktop\\3DI-2S-2026\\Projeto de Revis\u00E3o\\Plot.WebAPI\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Users\\Marcos Vinicius\\Desktop\\3DI-2S-2026\\Projeto de Revis\u00E3o\\Plot.WebAPI\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAAAAkAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-11-09T11:40:07.017Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "FilmeController.cs",
-              "DocumentMoniker": "C:\\Users\\Marcos Vinicius\\Desktop\\3DI-2S-2026\\Projeto de Revis\u00E3o\\Plot.WebAPI\\Controllers\\FilmeController.cs",
-              "RelativeDocumentMoniker": "Controllers\\FilmeController.cs",
-              "ToolTip": "C:\\Users\\Marcos Vinicius\\Desktop\\3DI-2S-2026\\Projeto de Revis\u00E3o\\Plot.WebAPI\\Controllers\\FilmeController.cs",
-              "RelativeToolTip": "Controllers\\FilmeController.cs",
-              "ViewState": "AgIAAHIAAAAAAAAAAADwv3sAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-13T13:05:07.785Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "UsuarioController.cs",
-              "DocumentMoniker": "C:\\Users\\Marcos Vinicius\\Desktop\\3DI-2S-2026\\Projeto de Revis\u00E3o\\Plot.WebAPI\\Controllers\\UsuarioController.cs",
-              "RelativeDocumentMoniker": "Controllers\\UsuarioController.cs",
-              "ToolTip": "C:\\Users\\Marcos Vinicius\\Desktop\\3DI-2S-2026\\Projeto de Revis\u00E3o\\Plot.WebAPI\\Controllers\\UsuarioController.cs",
-              "RelativeToolTip": "Controllers\\UsuarioController.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAgwIMAAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-13T17:16:35.29Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "GeneroController.cs",
               "DocumentMoniker": "C:\\Users\\Marcos Vinicius\\Desktop\\3DI-2S-2026\\Projeto de Revis\u00E3o\\Plot.WebAPI\\Controllers\\GeneroController.cs",
               "RelativeDocumentMoniker": "Controllers\\GeneroController.cs",
@@ -212,8 +210,7 @@
               "RelativeToolTip": "Controllers\\GeneroController.cs",
               "ViewState": "AgIAAB0AAAAAAAAAAAA8wEcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-13T11:52:22.966Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-13T11:52:22.966Z"
             },
             {
               "$type": "Document",
@@ -225,8 +222,7 @@
               "RelativeToolTip": "Services\\CloudinaryService.cs",
               "ViewState": "AgIAAB4AAAAAAAAAAAAAACMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-09T17:55:18.568Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-09T17:55:18.568Z"
             },
             {
               "$type": "Document",
@@ -238,8 +234,7 @@
               "RelativeToolTip": "Controllers\\LoginController.cs",
               "ViewState": "AgIAACEAAAAAAAAAAAAAADIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-13T18:07:14.165Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-13T18:07:14.165Z"
             },
             {
               "$type": "Document",
@@ -251,8 +246,7 @@
               "RelativeToolTip": "Repositories\\FilmeRepository.cs",
               "ViewState": "AgIAACkAAAAAAAAAAAAowC4AAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-09T14:17:34.475Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-09T14:17:34.475Z"
             },
             {
               "$type": "Document",
@@ -264,8 +258,7 @@
               "RelativeToolTip": "Services\\ImageFolder.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-09T17:57:11.74Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-09T17:57:11.74Z"
             },
             {
               "$type": "Document",
@@ -277,8 +270,7 @@
               "RelativeToolTip": "DTO\\FilmeDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-09T16:48:38.378Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-09T16:48:38.378Z"
             },
             {
               "$type": "Document",
@@ -290,8 +282,7 @@
               "RelativeToolTip": "Models\\Filme.cs",
               "ViewState": "AgIAABcAAAAAAAAAAAAgwBUAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-09T12:26:49.246Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-09T12:26:49.246Z"
             },
             {
               "$type": "Document",
@@ -303,8 +294,7 @@
               "RelativeToolTip": "Services\\IImageService.cs",
               "ViewState": "AgIAAAIAAAAAAAAAAAA8wAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-09T17:59:04.159Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-09T17:59:04.159Z"
             },
             {
               "$type": "Document",
@@ -316,8 +306,7 @@
               "RelativeToolTip": "Utils\\CloudinarySettings.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-09T18:02:53.284Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-09T18:02:53.284Z"
             },
             {
               "$type": "Document",
@@ -329,8 +318,7 @@
               "RelativeToolTip": "Models\\Genero.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAuwBMAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-09T12:56:26.477Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-09T12:56:26.477Z"
             },
             {
               "$type": "Document",
@@ -342,8 +330,7 @@
               "RelativeToolTip": "Utils\\SwaggerAuthorizeOperationFilter.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAAAswBMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-13T11:26:21.603Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-13T11:26:21.603Z"
             },
             {
               "$type": "Document",
@@ -355,8 +342,7 @@
               "RelativeToolTip": "Repositories\\GeneroRepository.cs",
               "ViewState": "AgIAABoAAAAAAAAAAAAWwCAAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-09T13:42:35.29Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-09T13:42:35.29Z"
             },
             {
               "$type": "Document",
@@ -368,8 +354,7 @@
               "RelativeToolTip": "Interfaces\\IGeneroRepository.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAvwAsAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-09T13:07:29.316Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-09T13:07:29.316Z"
             },
             {
               "$type": "Document",

@@ -87,6 +87,16 @@ builder.Services.AddSwaggerGen(options =>
     options.OperationFilter<SwaggerAuthorizeOperationFilter>();
 });
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("FrontEnd", policy =>
+    {
+        policy.WithOrigins("http://localhost:3000")
+            .AllowAnyHeader()
+            .AllowAnyMethod();
+    });
+});
+
 var app = builder.Build();
 
 if (app.Environment.IsDevelopment())
@@ -101,6 +111,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+app.UseCors("FrontEnd");
 app.UseAuthentication();
 app.UseAuthorization();
 app.MapControllers();
