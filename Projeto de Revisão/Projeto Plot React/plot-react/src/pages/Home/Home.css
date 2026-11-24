@@ -1,0 +1,253 @@
+
+/* FILME EM DESTAQUE */
+
+.filme-destaque {
+    display: flex;
+    align-items: center;
+    height: 387px;
+    padding: 25px;
+    border-radius: 9px;
+    /* background: linear-gradient(90deg, #000b, transparent 75%), url('../../assets/Duna-banner.png') center/cover; */
+}
+
+.generos-destaque span {
+    color: var(--rosa);
+}
+
+.informacoes-destaque h1 {
+    font-size: 3.5em;
+    margin: 10px 0;
+}
+
+.informacoes-destaque .sinopse {
+    font-size: 20px;
+    margin-bottom: 20px;
+    max-width: 80%;
+}
+
+.botoes-destaque {
+    display: flex;
+    gap: 10px;
+}
+
+.botao-rosa,
+.botao-escuro {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: var(--texto);
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.botao-rosa {
+    background: var(--rosa);
+}
+
+.botao-escuro {
+    background: #131037;
+}
+
+/* FILTRO DE GÊNEROS */
+
+.filtro-generos {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    margin: 35px 0;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.filtro-generos h2 {
+    font-size: 1.1em;
+    margin-right: 12px;
+}
+
+.filtro-generos button {
+    padding: 8px 13px;
+    border: 1px solid #34285d;
+    border-radius: 10px;
+    background: #131037;
+    color: #aaa3c5;
+}
+
+.filtro-generos .selecionado {
+    background: var(--rosa);
+    border-color: var(--rosa);
+    color: var(--texto);
+}
+
+/* SEÇÕES */
+
+.secao-filmes {
+    margin-bottom: 35px;
+}
+
+.titulo-secao {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.titulo-secao h2 {
+    border-left: 4px solid var(--rosa);
+    padding-left: 10px;
+    font-size: 1.3em;
+}
+
+.titulo-secao a {
+    font-size: 0.9em;
+}
+
+/* FILMES RECENTES */
+
+.lista-recentes {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    gap: 13px;
+}
+
+.filme img {
+    width: 100%;
+    height: 94px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.filme h3 {
+    margin-top: 5px;
+    font-size: 0.95em;
+}
+
+.filme p {
+    color: #9891b6;
+    font-size: 0.85em;
+}
+
+/* TERROR E SUSPENSE */
+
+.lista-horizontal {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 13px;
+}
+
+.lista-suspense {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+.filme-horizontal {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    height: 111px;
+    padding: 13px;
+    border-radius: 8px;
+    background-size: cover;
+    background-position: center;
+}
+
+.filme-horizontal h3 {
+    font-size: 1em;
+}
+
+.filme-horizontal p,
+.filme-horizontal small {
+    color: #b0a9c6;
+    font-size: 0.8em;
+}
+
+.filme-horizontal a {
+    padding: 8px 12px;
+    border-radius: 50%;
+    background: #ffffff55;
+    color: var(--texto);
+}
+
+.filme-sem-capa {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 94px;
+    border-radius: 8px;
+    background-color: var(--campo);
+    color: #aaa3c5;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 950px) {
+    .menu-lateral {
+        width: 165px;
+    }
+
+    .conteudo-principal {
+        margin-left: 165px;
+        padding-left: 25px;
+    }
+
+    .lista-recentes {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .lista-horizontal,
+    .lista-suspense {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .campo-pesquisa {
+        width: 300px;
+    }
+}
+
+@media (max-width: 650px) {
+    .menu-lateral {
+        position: static;
+        width: 100%;
+        height: auto;
+    }
+
+    .menu-navegacao {
+        display: flex;
+        overflow-x: auto;
+    }
+
+    .menu-navegacao a {
+        white-space: nowrap;
+        padding: 12px;
+    }
+
+    .conteudo-principal {
+        margin: 0;
+        padding: 20px 16px;
+    }
+
+    .cabecalho {
+        gap: 15px;
+    }
+
+    .campo-pesquisa {
+        width: 100%;
+    }
+
+    .filme-destaque {
+        height: 350px;
+    }
+
+    .informacoes-destaque h1 {
+        font-size: 2.5em;
+    }
+
+    .lista-recentes {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .lista-horizontal,
+    .lista-suspense {
+        grid-template-columns: 1fr;
+    }
+}

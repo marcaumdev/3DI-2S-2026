@@ -1,0 +1,184 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+
+:root {
+    --fundo: #040311;
+    --campo: #1F1D35;
+    --rosa: #FF0087;
+    --texto: #FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--fundo);
+    color: var(--texto);
+    font-family: "Fredoka", sans-serif;
+}
+
+.layout-principal {
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+
+input, button {
+    font-family: "Fredoka", sans-serif;
+}
+
+input {
+    border: none;
+    outline: none;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
+a {
+    color: var(--rosa);
+    text-decoration: none;
+}
+
+/* MENU LATERAL */
+
+.menu-lateral {
+    width: 250px;
+    height: 100vh;
+    background-color: var(--fundo);
+    position: sticky;
+    top: 0;
+}
+
+.logo {
+    width: 145px;
+    margin: 30px 25px 40px;
+}
+
+.menu-navegacao a {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 13px 25px;
+    margin-bottom: 8px;
+    color: var(--texto);
+    font-size: 1.1em;
+}
+
+.menu-navegacao a i {
+    width: 20px;
+    text-align: center;
+}
+
+.menu-navegacao .ativo {
+    background: var(--rosa);
+    border-radius: 0 9px 9px 0;
+}
+
+
+/* CABEÇALHO */
+
+.cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 35px;
+}
+
+.campo-pesquisa {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    width: 460px;
+    padding: 14px 20px;
+    border-radius: 9px;
+    background: var(--campo);
+}
+
+.campo-pesquisa input {
+    width: 100%;
+    background: transparent;
+    color: var(--texto);
+    font-size: 1.1em;
+}
+
+.campo-pesquisa i {
+    color: #9891b6;
+}
+
+.titulo-pagina h1 {
+    font-size: 35px;
+    margin-bottom: 8px;
+}
+
+.titulo-pagina p {
+    font-size: 20px;
+}
+
+.usuario {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--texto);
+}
+
+.usuario img {
+    object-fit: cover;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+
+/* MENU DO USUÁRIO */
+
+.menu-usuario {
+    position: relative;
+}
+
+.usuario {
+    font-size: 1em;
+    background: transparent;
+}
+
+.opcoes-usuario {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 45px;
+    width: 125px;
+    padding: 10px;
+    background: var(--campo);
+    border-radius: 10px;
+}
+
+.opcoes-usuario.aberto {
+    display: block;
+}
+
+.opcoes-usuario a, .opcoes-usuario button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 6px 0;
+    color: var(--texto);
+    white-space: nowrap;
+    background: transparent;
+    font-size: 1em;
+}
+
+.opcoes-usuario a:hover,
+.opcoes-usuario button:hover {
+    color: var(--rosa);
+}
+
+
+/* CONTEÚDO PRINCIPAL */
+
+.conteudo-principal {
+    padding: 30px 50px;
+}

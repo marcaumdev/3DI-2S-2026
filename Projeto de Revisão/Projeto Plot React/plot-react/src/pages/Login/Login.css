@@ -1,0 +1,106 @@
+.area-login {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    height: 100vh;
+    padding: 50px 150px;
+
+    background-image: url('../../assets/fundo-login.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+}
+
+.conteudo-login {
+    width: 40%;
+}
+
+.descricao {
+    width: 80%;
+    font-size: 1.4em;
+
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    width: 100%;
+}
+
+.campo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    height: 60px;
+    width: 100%;
+    padding: 0 30px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    background: var(--campo);
+    
+}
+
+.campo input {
+    background: transparent;
+    color: var(--texto);
+    font-size: 1.2em;
+}
+
+.campo input::placeholder {
+    color: #D9D9D9;
+}
+
+.campo i {
+    font-size: 20px;
+}
+
+.opcoes-login {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    margin-bottom: 60px;
+    font-size: 1.1em;
+}
+
+.lembrar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.lembrar input {
+    width: 20px;
+    height: 20px;
+    accent-color: var(--rosa);
+}
+
+.botao-entrar {
+    height: 60px;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #FB4888, var(--rosa));
+    color: var(--texto);
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.mensagem-cadastro {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 1em;
+}
+
+.erro-login {
+    color: var(--rosa);
+    margin-bottom: 20px;
+}
+
+.botao-entrar:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
