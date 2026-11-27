@@ -15,9 +15,9 @@ export function salvarSessao(dados: RespostaLogin) {
     //      tipoUsuario: "Admin"
     //}
     sessionStorage.setItem("usuario", JSON.stringify({ 
-        nome: dados.nome,
-        email: dados.email,
-        tipoUsuario: dados.tipoUsuario
+        nome: dados.usuario.nome,
+        email: dados.usuario.email,
+        tipoUsuario: dados.usuario.tipoUsuario
     }));
 
     sessionStorage.setItem("expiracaoUtc", dados.expiracaoUtc);

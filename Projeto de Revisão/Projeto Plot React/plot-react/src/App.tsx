@@ -21,13 +21,7 @@ function App() {
         {/* Só consigo acessar a home, se estiver autenticado */}
         <Route element={<RotaProtegida />}>
           <Route path="/home" element={<Home />} />
-        </Route>
-
-        <Route element={<RotaProtegida />}>
           <Route path="/detalhes/:id" element={<Detalhes />} />
-        </Route>
-
-        <Route element={<RotaProtegida />}>
           <Route path="/filmes" element={<Filmes />} />
         </Route>
 

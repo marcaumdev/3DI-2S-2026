@@ -6,11 +6,19 @@ import MenuUsuario from "../../components/MenuUsuario";
 import "./Filmes.css";
 import type { Filme } from "../../types/filme";
 import type { Genero } from "../../types/genero";
-import { listarFilmes } from "../../api/filmes";
+import { cadastrarFilme, editarFilme, excluirFilme, listarFilmes } from "../../api/filmes";
 import { listarGeneros } from "../../api/generos";
 import { obterUsuario } from "../../services/sessaoService";
 
 function Filmes() {
+    const [titulo, setTitulo] = useState("");
+    const [sinopse, setSinopse] = useState("");
+    const [dataLancamento, setDataLancamento] = useState("");
+    const [duracao, setDuracao] = useState("");
+    const [arquivoImagem, setArquivoImagem] = useState<File | null>(null);
+    const [generosSelecionados, setGenerosSelecionados] = useState<number[]>([])
+    const [idEdicao, setIdEdicao] = useState<number | null>(null);
+
     const [filmes, setFilmes] = useState<Filme[]>([])
     const [generos, setGeneros] = useState<Genero[]>([])
 
@@ -29,6 +37,7 @@ function Filmes() {
 
                 setFilmes(respostaFilmes.items);
                 setGeneros(respostaGeneros);
+                console.log(usuario)
             } catch (error) {
                 console.error("Erro ao carregar dados:", error);
             }
@@ -71,6 +80,132 @@ function Filmes() {
 
     })
 
+    // Obtém os anos do filmes, remove duplicados e ordena do mais recente ao mais antigo
+    const anos = [...new Set(
+        // Percorre os filmes e extrai o ano de lançamento de cada um
+        filmes.map((filme) => filme.dataLancamento.substring(0, 4))
+    )].sort((a, b) => b.localeCompare(a)); // compara os anos colocando os mais recentes primeiro
+
+    function limparFormulario() {
+        setTitulo("");
+        setSinopse("");
+        setDataLancamento("");
+        setDuracao("");
+        setArquivoImagem(null);
+        setGenerosSelecionados([])
+        setIdEdicao(null)
+
+        const campoPoster = document.getElementById("poster") as HTMLInputElement;
+
+        if (campoPoster) {
+            campoPoster.value = ""
+        }
+    }
+
+    async function salvarFilme(evento: React.SubmitEvent<HTMLFormElement>) {
+        evento.preventDefault();
+
+        if (generosSelecionados.length === 0) {
+            alert("Selecione pelo menos um gênero.")
+            return;
+        }
+
+        const dados = new FormData();
+
+        dados.append("Titulo", titulo);
+        dados.append("Sinopse", sinopse);
+        dados.append("DataLancamento", dataLancamento);
+        dados.append("Duracao", duracao);
+
+        if (arquivoImagem) {
+            dados.append("ArquivoImagem", arquivoImagem);
+        }
+
+        generosSelecionados.forEach((id) => {
+            dados.append("IdGeneros", id.toString());
+        });
+
+        try {
+
+            // Verifica se estamos cadastrando ou editando um filme
+            if (idEdicao === null) {
+                await cadastrarFilme(dados);
+                alert("Filme cadastrado com sucesso!");
+            } else{
+                await editarFilme(idEdicao, dados)
+                alert("Filme atualizado com sucesso!")
+            }
+
+            // Atualiza a listagem de filmes
+            const resposta = await listarFilmes(1, 100);
+            setFilmes(resposta.items);
+
+            limparFormulario();
+
+        } catch (error) {
+            console.error("Erro ao cadastrar filme:", error);
+            alert("Não foi possível cadastrar o filme.")
+        }
+    }
+
+    function selecionarFilme(filme: Filme) {
+
+        //Armazena o identificador do filme selecionado
+        setIdEdicao(filme.idFilme)
+
+        // Preenche os campos do formulário
+        setTitulo(filme.titulo);
+        setSinopse(filme.sinopse);
+        setDataLancamento(filme.dataLancamento.substring(0, 10));
+        setDuracao(String(filme.duracao))
+
+        // Limpa a imagem selecionada anteriormente
+        setArquivoImagem(null);
+
+        // Recupera os gêneros associados ao filme
+        setGenerosSelecionados(
+            filme.idGenero.map(genero => genero.idGenero)
+        );
+
+        // Limpa o campo de seleção de imagem
+        const campoPoster = document.getElementById("poster") as HTMLInputElement;
+
+        if (campoPoster) {
+            campoPoster.value = "";
+        }
+
+        //Retorna ao início da página para visualizar o formulário
+        window.scrollTo({ top: 0, behavior: "smooth" })
+    }
+
+    async function removerFilme(id: number){
+        // Solicita a confirmação antes de excluir o filme
+        const confirmar = window.confirm(
+            "Deseja realmente excluir este filme?"
+        )
+
+        // Se o usuário cancelar, interrompe a função
+        if(!confirmar) return;
+
+        try{
+            // Envia a requisição de exclusão para API
+            await excluirFilme(id);
+
+            // Atualiza a listagem após a exclusão
+            const resposta = await listarFilmes(1, 100);
+            setFilmes(resposta.items);
+
+            // Limpa o formulário se o filme excluído estiver em edição
+            if(idEdicao === id){
+                limparFormulario();
+            }
+            alert("Filme excluído com sucesso")
+        } catch(error) {
+            console.error("Erro ao excluir filme:", error);
+            alert("Não foi possível excluir o filme");
+        }
+    }
+
     return (
         <div className="layout-principal">
 
@@ -91,120 +226,170 @@ function Filmes() {
 
                 {/* CADASTRAR / EDITAR FILME */}
 
-                <section className="secao-filmes">
+                {ehAdmin && (
+                    <section className="secao-filmes">
 
-                    <h2>Cadastrar / Editar Filme</h2>
+                        <h2>Cadastrar / Editar Filme</h2>
 
-                    <form className="formulario-filme">
+                        <form className="formulario-filme" onSubmit={salvarFilme}>
 
-                        <div className="coluna-formulario">
+                            <div className="coluna-formulario">
 
-                            <div className="campo-formulario">
-                                <label htmlFor="titulo">Título</label>
-                                <input
-                                    type="text"
-                                    id="titulo"
-                                    name="titulo"
-                                    placeholder="Digite o título do filme"
-                                    required
-                                />
+                                <div className="campo-formulario">
+                                    <label htmlFor="titulo">Título</label>
+                                    <input
+                                        type="text"
+                                        id="titulo"
+                                        name="titulo"
+                                        placeholder="Digite o título do filme"
+                                        value={titulo}
+                                        onChange={(e) => setTitulo(e.target.value)}
+                                        required
+                                    />
+                                </div>
+
+                                <div className="campo-formulario">
+                                    <label htmlFor="data">Data de lançamento</label>
+                                    <input
+                                        type="date"
+                                        id="data"
+                                        name="data"
+                                        value={dataLancamento}
+                                        onChange={(e) => setDataLancamento(e.target.value)}
+                                        required
+                                    />
+                                </div>
+
+                                <div className="campo-formulario">
+                                    <label htmlFor="sinopse">Sinopse</label>
+                                    <textarea
+                                        id="sinopse"
+                                        name="sinopse"
+                                        placeholder="Digite a sinopse ou descrição do filme"
+                                        value={sinopse}
+                                        onChange={(e) => setSinopse(e.target.value)}
+                                        required
+                                    />
+                                </div>
+
                             </div>
 
-                            <div className="campo-formulario">
-                                <label htmlFor="data">Data de lançamento</label>
-                                <input
-                                    type="date"
-                                    id="data"
-                                    name="data"
-                                    required
-                                />
-                            </div>
+                            <div className="coluna-formulario">
 
-                            <div className="campo-formulario">
-                                <label htmlFor="sinopse">Sinopse</label>
-                                <textarea
-                                    id="sinopse"
-                                    name="sinopse"
-                                    placeholder="Digite a sinopse ou descrição do filme"
-                                    required
-                                />
-                            </div>
+                                <div className="campo-formulario">
+                                    <label htmlFor="poster">Pôster</label>
 
-                        </div>
+                                    <label htmlFor="poster" className="campo-arquivo">
+                                        <i className="fa-solid fa-download"></i>
+                                        <span>
+                                            {arquivoImagem
+                                                ? arquivoImagem.name
+                                                : "Selecione o arquivo desejado"
+                                            }
+                                        </span>
+                                    </label>
 
-                        <div className="coluna-formulario">
+                                    <input
+                                        type="file"
+                                        id="poster"
+                                        name="poster"
+                                        accept="image/*"
+                                        hidden
+                                        onChange={(e) => setArquivoImagem(
+                                            e.target.files?.[0] || null
+                                        )}
+                                    />
+                                </div>
 
-                            <div className="campo-formulario">
-                                <label htmlFor="poster">Pôster</label>
+                                <div className="campo-formulario">
+                                    <label htmlFor="duracao">Duração</label>
+                                    <input
+                                        type="number"
+                                        id="duracao"
+                                        name="duracao"
+                                        min="1"
+                                        placeholder="Digite a duração em minutos"
+                                        value={duracao}
+                                        onChange={(e) => setDuracao(e.target.value)}
+                                        required
+                                    />
+                                </div>
 
-                                <label htmlFor="poster" className="campo-arquivo">
-                                    <i className="fa-solid fa-download"></i>
-                                    <span>Selecione o arquivo desejado</span>
-                                </label>
+                                <div className="campo-formulario">
+                                    <label htmlFor="generos">Gênero</label>
 
-                                <input
-                                    type="file"
-                                    id="poster"
-                                    name="poster"
-                                    accept="image/*"
-                                    hidden
-                                />
-                            </div>
+                                    <select
+                                        id="generos"
+                                        onChange={(e) => {
+                                            const id = Number(e.target.value)
 
-                            <div className="campo-formulario">
-                                <label htmlFor="duracao">Duração</label>
-                                <input
-                                    type="number"
-                                    id="duracao"
-                                    name="duracao"
-                                    min="1"
-                                    placeholder="Digite a duração em minutos"
-                                    required
-                                />
-                            </div>
+                                            if (!generosSelecionados.includes(id)) {
+                                                setGenerosSelecionados(
+                                                    [...generosSelecionados, id]
+                                                );
+                                            }
+                                        }}
+                                    >
+                                        <option value="" disabled>
+                                            Selecione o(s) gênero(s)
+                                        </option>
+                                        {generos.map((genero) => (
+                                            <option
+                                                key={genero.idGenero}
+                                                value={genero.idGenero}
+                                            >
+                                                {genero.nome}
+                                            </option>
+                                        ))}
+                                    </select>
 
-                            <div className="campo-formulario">
-                                <label htmlFor="generos">Gênero</label>
+                                    <div className="generos-selecionados">
+                                        {generosSelecionados.map((id) => {
+                                            const genero = generos.find((g) => g.idGenero === id)
 
-                                <select id="generos" defaultValue="">
-                                    <option value="" disabled>
-                                        Selecione o(s) gênero(s)
-                                    </option>
-                                    <option value="1">Ação</option>
-                                    <option value="2">Aventura</option>
-                                    <option value="3">Comédia</option>
-                                    <option value="4">Drama</option>
-                                    <option value="5">Ficção Científica</option>
-                                </select>
+                                            return (
+                                                <button
+                                                    key={id}
+                                                    type="button"
+                                                    className="genero-selecionado"
+                                                    onClick={() =>
+                                                        setGenerosSelecionados(
+                                                            generosSelecionados.filter((g) => g !== id)
+                                                        )
+                                                    }
+                                                >
+                                                    {genero?.nome}
+                                                    <i className="fa-solid fa-xmark"></i>
+                                                </button>
+                                            )
+                                        })}
+                                    </div>
 
-                                <div className="generos-selecionados">
-                                    <button type="button" className="genero-selecionado">
-                                        Aventura
-                                        <i className="fa-solid fa-xmark"></i>
+                                    <a href="#" className="adicionar-genero">
+                                        + Adicione um gênero
+                                    </a>
+                                </div>
+
+                                <div className="botoes-formulario">
+                                    <button
+                                        type="reset"
+                                        className="botao-limpar"
+                                        onClick={limparFormulario}
+                                    >
+                                        Limpar
+                                    </button>
+
+                                    <button type="submit" className="botao-salvar">
+                                        <i className="fa-solid fa-floppy-disk"></i>
+                                        Salvar Filme
                                     </button>
                                 </div>
 
-                                <a href="#" className="adicionar-genero">
-                                    + Adicione um gênero
-                                </a>
                             </div>
 
-                            <div className="botoes-formulario">
-                                <button type="reset" className="botao-limpar">
-                                    Limpar
-                                </button>
+                        </form>
 
-                                <button type="button" className="botao-salvar">
-                                    <i className="fa-solid fa-floppy-disk"></i>
-                                    Salvar Filme
-                                </button>
-                            </div>
-
-                        </div>
-
-                    </form>
-
-                </section>
+                    </section>)}
 
                 {/* FILMES CADASTRADOS */}
 
@@ -228,11 +413,19 @@ function Filmes() {
                         <div className="filtro-ano">
                             <label htmlFor="ano">Ano de lançamento</label>
 
-                            <select id="ano">
+                            <select
+                                id="ano"
+                                value={ano}
+                                onChange={(e) => setAno(e.target.value)}
+                            >
                                 <option value="">Todos</option>
-                                <option value="2024">2024</option>
-                                <option value="2023">2023</option>
-                                <option value="2022">2022</option>
+
+                                {anos.map((anoFilme) => (
+                                    <option key={anoFilme} value={anoFilme}>
+                                        {anoFilme}
+                                    </option>
+                                ))}
+
                             </select>
                         </div>
 
@@ -267,14 +460,20 @@ function Filmes() {
                                                     type="button"
                                                     className="botao-acao"
                                                     title="Editar"
+                                                    onClick={
+                                                        () => selecionarFilme(filme)
+                                                    }
                                                 >
-                                                    <i className="fa-regular fa-open-to-square"></i>
+                                                    <i className="fa-regular fa-pen-to-square"></i>
                                                 </button>
 
                                                 <button
                                                     type="button"
                                                     className="botao-acao"
                                                     title="Excluir"
+                                                    onClick={ 
+                                                    () => removerFilme(filme.idFilme)
+                                                    }
                                                 >
                                                     <i className="fa-regular fa-trash-can"></i>
                                                 </button>

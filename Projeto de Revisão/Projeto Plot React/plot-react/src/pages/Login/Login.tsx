@@ -9,8 +9,8 @@ import { salvarSessao } from "../../services/sessaoService";
 function Login() {
 
     // cria um estado para armazenar e atualizar email e senha
-    const [email, setEmail] = useState("");
-    const [senha, setSenha] = useState("");
+    const [email, setEmail] = useState("marcos@gmail.com");
+    const [senha, setSenha] = useState("Senai@134");
 
     // console.log("Email", email)
     // console.log("Senha", senha)

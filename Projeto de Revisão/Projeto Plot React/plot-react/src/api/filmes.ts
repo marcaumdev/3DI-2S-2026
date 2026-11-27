@@ -31,3 +31,22 @@ export async function buscarFilmeId(id: number): Promise<Filme>{
 
     return resposta.data;
 }
+
+//Cadastra um novo filme
+export async function cadastrarFilme(dados: FormData){
+    const resposta = await api.post("Filme", dados);
+    
+    return resposta.data;
+}
+
+// Atualiza os dados de um filme
+export async function editarFilme(id: number, dados: FormData){
+    const resposta = await api.put(`Filme/${id}`, dados)
+
+    return resposta.data;
+}
+
+// Excluir um filme
+export async function excluirFilme(id: number){
+    await api.delete(`Filme/${id}`)
+}
