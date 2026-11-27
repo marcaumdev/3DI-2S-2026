@@ -2,6 +2,8 @@ import { BrowserRouter, Route, Routes } from "react-router-dom"
 import Login from "./pages/Login/Login"
 import Home from "./pages/Home/Home"
 import RotaProtegida from "./routes/RotaProtegida"
+import Detalhes from "./pages/Detalhes/Detalhes"
+import Filmes from "./pages/Filmes/Filmes"
 
 
 function App() {
@@ -20,6 +22,15 @@ function App() {
         <Route element={<RotaProtegida />}>
           <Route path="/home" element={<Home />} />
         </Route>
+
+        <Route element={<RotaProtegida />}>
+          <Route path="/detalhes/:id" element={<Detalhes />} />
+        </Route>
+
+        <Route element={<RotaProtegida />}>
+          <Route path="/filmes" element={<Filmes />} />
+        </Route>
+
       </Routes>
     </BrowserRouter>
   )

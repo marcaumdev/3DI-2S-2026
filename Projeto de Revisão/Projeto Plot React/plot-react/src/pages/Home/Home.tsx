@@ -15,17 +15,36 @@ function Home() {
     const [filmes, setFilmes] = useState<Filme[]>([])
     const [generos, setGeneros] = useState<Genero[]>([])
 
+    // O valor 0 irá representar a opção Todos, ou nenhum filtro aplicado
+    const [generoSelecionado, setGeneroSelecionado] = useState(0);
+    const [filmeDestaque, setFilmeDestaque] = useState<Filme | null>(null);
+
     const [carregando, setCarregando] = useState(true)
     const [erro, setErro] = useState("");
 
     const [busca, setBusca] = useState("");
+
+    // Filtra os filmes de acordo com gênero selecionado
+    const filmesFiltrados = filmes.filter((filme) => {
+
+        // Se nenhum gênero específico estiver selecionado, exibe todos os filmes
+        if (generoSelecionado === 0) {
+            return true;
+        }
+
+        // Verifica se o filme possui o gênero selecionado
+        return filme.idGenero.some(
+            // Verifica se o ID do gênero do filme corresponde ao gênero selecionado
+            (genero) => genero.idGenero === generoSelecionado
+        )
+    })
 
     // executa a consulta na API quando o componente é montado
     // controla quando a consulta acontece, evitando novas requisições a cada renderização
     useEffect(() => {
 
         async function carregarFilmes() {
-            
+
             setCarregando(true);
             setErro("");
 
@@ -60,7 +79,21 @@ function Home() {
         carregarGeneros();
 
     }, []);
-     
+
+    useEffect(() => {
+
+        async function carregarDestaque() {
+            try {
+                const resposta = await listarFilmes(1, 100);
+                setFilmeDestaque(resposta.items[0] ?? null) // resposta.items[0] seleciona o primeiro filme retornado
+            } catch (erro) {
+                console.error("Erro ao carregar filme em destaque:", erro)
+            }
+        }
+
+        carregarDestaque();
+    }, [])
+
 
     return (
         <div className="layout-principal">
@@ -71,65 +104,87 @@ function Home() {
                 <header className="cabecalho">
                     <div className="campo-pesquisa">
                         <i className="fa-solid fa-magnifying-glass"></i>
-                        <input 
-                            type="search" 
-                            placeholder="Buscar filmes, gêneros, atores..." 
-                            value={busca} onChange={(evento) => setBusca(evento.target.value)} 
+                        <input
+                            type="search"
+                            placeholder="Buscar filmes, gêneros, atores..."
+                            value={busca} onChange={(evento) => setBusca(evento.target.value)}
                         />
                     </div>
 
-                    <MenuUsuario/>
+                    <MenuUsuario />
                 </header>
 
                 <section
                     className="filme-destaque"
-                    // style={{
-                    //     backgroundImage: `linear-gradient(to right, #040311 10%, transparent 100%), url("${bannerDuna}")`,
-                    //     backgroundSize: "cover",
-                    //     backgroundPosition: "center"
-                    // }}
+                    style={{
+                        backgroundImage: filmeDestaque?.imagemCapa
+                            ? `linear-gradient(to right, #040311 10%, transparent 100%), url("${filmeDestaque.imagemCapa}")`
+                            : "none",
+                        backgroundSize: "cover",
+                        backgroundPosition: "center"
+                    }}
                 >
-                    <div className="informacoes-destaque">
-                        <p className="generos-destaque">
-                            Ficção Científica <span>•</span> Aventura <span>•</span> 2024
-                        </p>
+                    {filmeDestaque &&
+                        <div className="informacoes-destaque">
+                            <p className="generos-destaque">
+                                {/* Percorre os gêneros associados ao filme em destaque */}
+                                {filmeDestaque.idGenero.map((genero, index) => (
+                                    <span key={genero.idGenero}>
+                                        {/* Adiciona um separador antes do gênero, exceto o primeiro */}
+                                        {index > 0 && " • "}
+                                        {genero.nome}
+                                    </span>
+                                ))}
+                                <span> • </span>
+                                {filmeDestaque.dataLancamento.substring(0, 4)}
+                            </p>
 
-                        <h1>DUNA</h1>
+                            <h1>{filmeDestaque.titulo}</h1>
 
-                        <p className="sinopse">
-                            Em um futuro distante, Paul Atreides se junta
-                            a um povo nômade em um planeta desértico para
-                            evitar a destruição de sua família e de seu povo.
-                        </p>
+                            <p className="sinopse">
+                                {filmeDestaque.sinopse}
+                            </p>
 
-                        <div className="botoes-destaque">
-                            <Link to="/detalhes" className="botao-rosa">
-                                <i className="fa-solid fa-play"></i>
-                                Ver detalhes
-                            </Link>
+                            <div className="botoes-destaque">
+                                <Link to={`/detalhes/${filmeDestaque.idFilme}`} className="botao-rosa">
+                                    <i className="fa-solid fa-play"></i>
+                                    Ver detalhes
+                                </Link>
 
-                            <button type="button" className="botao-escuro">
-                                <i className="fa-solid fa-plus"></i>
-                                Adicionar à minha lista
-                            </button>
-                        </div>
-                    </div>
+                                <button type="button" className="botao-escuro">
+                                    <i className="fa-solid fa-plus"></i>
+                                    Adicionar à minha lista
+                                </button>
+                            </div>
+                        </div>}
                 </section>
 
                 <section className="filtro-generos">
                     <h2>Gêneros</h2>
-                    <button className="selecionado" type="button">
+                    {/* Botão que seleciona todos os gêneros e aplica a classe CSS quando estiver selecionado */}
+                    <button
+                        className={generoSelecionado === 0 ? "selecionado" : ""}
+                        type="button"
+                        onClick={() => setGeneroSelecionado(0)}
+                    >
                         <i className="fa-solid fa-border-all"></i> Todos
                     </button>
-                    <button type="button">Ação</button>
-                    <button type="button">Aventura</button>
-                    <button type="button">Comédia</button>
-                    <button type="button">Drama</button>
-                    <button type="button">Ficção Científica</button>
-                    <button type="button">Romance</button>
-                    <button type="button">Suspense</button>
-                    <button type="button">Terror</button>
-                    <button type="button">Animação</button>
+
+                    {/* Percorre a lista de gêneros e cria um botão pra cada gênero */}
+                    {generos.map((genero) => (
+                        <button
+                            // Identifica cada botão com o ID único do gênero
+                            key={genero.idGenero}
+                            type="button"
+                            // Aplica a classe CSS "selecionado" ao gênero selecionado
+                            className={generoSelecionado === genero.idGenero ? "selecionado" : ""}
+
+                            // Atualiza o estado com o ID do gênero clicado
+                            onClick={() => setGeneroSelecionado(genero.idGenero)}
+                        >
+                            {genero.nome}
+                        </button>
+                    ))}
                 </section>
 
                 <section className="secao-filmes">
@@ -145,119 +200,72 @@ function Home() {
                         {erro && <p>{erro}</p>}
 
                         {/* Exibe uma mensagem cas não existam filmes cadastrados */}
-                        {!carregando && !erro && filmes.length === 0 && 
+                        {!carregando && !erro && filmesFiltrados.length === 0 &&
                             (<p>Nenhum filme encontrado.</p>)}
 
-                        {!carregando && !erro && filmes.slice(0, 6).map((filme) => (
-                            <CardFilme key={filme.idFilme} filme={filme}/>
+                        {!carregando && !erro && filmesFiltrados.slice(0, 6).map((filme) => (
+                            <CardFilme key={filme.idFilme} filme={filme} />
                         ))}
 
                     </div>
                 </section>
 
-                <section className="secao-filmes">
-                    <div className="titulo-secao">
-                        <h2>Terror</h2>
-                        <Link to="/filmes">
-                            Ver todos <i className="fa-solid fa-arrow-right"></i>
-                        </Link>
-                    </div>
+                {generos.map((genero) => {
 
-                    <div className="lista-horizontal">
-                        <article className="filme-horizontal it">
-                            <div>
-                                <h3>IT</h3>
-                                <p>A COISA</p>
-                                <small>2017</small>
+                    // Se um gênero diferente de TODOS estiver selecionado e não for o gênero atual, ele não é exibido
+                    if (generoSelecionado !== 0 && generoSelecionado !== genero.idGenero) {
+                        return null
+                    }
+
+                    // Verifica se o filme possui o gênero atual
+                    const filmesDoGenero = filmesFiltrados.filter((filme) =>
+                        filme.idGenero.some((g) => g.idGenero === genero.idGenero)
+                    );
+
+                    if (filmesDoGenero.length === 0) {
+                        return null;
+                    }
+
+                    return (
+                        <section className="secao-filme" key={genero.idGenero}>
+                            <div className="titulo-secao">
+                                <h2>{genero.nome}</h2>
+
+                                <Link to="/filmes">
+                                    Ver todos <i className="fa-solid fa-arrow-right"></i>
+                                </Link>
                             </div>
-                            <Link to="/detalhes">
-                                <i className="fa-solid fa-chevron-right"></i>
-                            </Link>
-                        </article>
 
-                        <article className="filme-horizontal freira">
-                            <div>
-                                <h3>A FREIRA</h3>
-                                <small>2018</small>
+
+                            <div className="lista-horizontal">
+                                {
+                                    filmesDoGenero.map((filme) => (
+                                        <article
+                                            className="filme-horizontal"
+                                            key={filme.idFilme}
+                                            style={{
+                                                backgroundImage: filme.imagemCapa
+                                                    ? `url("${filme.imagemCapa}")`
+                                                    : "none",
+                                                backgroundColor: "var(--campo)"
+                                            }}
+                                        >
+                                            <div>
+                                                <h3>{filme.titulo}</h3>
+                                                <small>{filme.dataLancamento.substring(0, 4)}</small>
+                                            </div>
+
+                                            <Link to={`/detalhes/${filme.idFilme}`}>
+                                                <i className="fa-solid fa-chevron-right"></i>
+                                            </Link>
+                                        </article>
+                                    ))
+                                }
                             </div>
-                            <Link to="/detalhes">
-                                <i className="fa-solid fa-chevron-right"></i>
-                            </Link>
-                        </article>
+                        </section>
+                    )
+                })}
 
-                        <article className="filme-horizontal sobrenatural">
-                            <div>
-                                <h3>SOBRENATURAL</h3>
-                                <p>A PORTA VERMELHA</p>
-                                <small>2023</small>
-                            </div>
-                            <Link to="/detalhes">
-                                <i className="fa-solid fa-chevron-right"></i>
-                            </Link>
-                        </article>
-                    </div>
-                </section>
-
-                <section className="secao-filmes">
-                    <div className="titulo-secao">
-                        <h2>Suspense</h2>
-                        <Link to="/filmes">
-                            Ver todos <i className="fa-solid fa-arrow-right"></i>
-                        </Link>
-                    </div>
-
-                    <div className="lista-horizontal lista-suspense">
-                        <article className="filme-horizontal noite">
-                            <div>
-                                <h3>A NOITE SEM FIM</h3>
-                                <small>1984</small>
-                            </div>
-                            <Link to="/detalhes">
-                                <i className="fa-solid fa-chevron-right"></i>
-                            </Link>
-                        </article>
-
-                        <article className="filme-horizontal floresta">
-                            <div>
-                                <h3>FLORESTA SOMBRIA</h3>
-                                <small>2020</small>
-                            </div>
-                            <Link to="/detalhes">
-                                <i className="fa-solid fa-chevron-right"></i>
-                            </Link>
-                        </article>
-
-                        <article className="filme-horizontal sussurros">
-                            <div>
-                                <h3>SUSSURROS</h3>
-                                <small>2023</small>
-                            </div>
-                            <Link to="/detalhes">
-                                <i className="fa-solid fa-chevron-right"></i>
-                            </Link>
-                        </article>
-
-                        <article className="filme-horizontal sombras">
-                            <div>
-                                <h3>SOMBRAS NA CIDADE</h3>
-                                <small>2024</small>
-                            </div>
-                            <Link to="/detalhes">
-                                <i className="fa-solid fa-chevron-right"></i>
-                            </Link>
-                        </article>
-
-                        <article className="filme-horizontal nevoa">
-                            <div>
-                                <h3>NÉVOA SILENCIOSA</h3>
-                                <small>2025</small>
-                            </div>
-                            <Link to="/detalhes">
-                                <i className="fa-solid fa-chevron-right"></i>
-                            </Link>
-                        </article>
-                    </div>
-                </section>
             </main>
         </div>
     );
